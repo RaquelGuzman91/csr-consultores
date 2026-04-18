@@ -115,7 +115,6 @@ body{
 /*----- service -----*/
 .service {
     width: 100%;
-    min-height: 90vh;
     padding: 2rem;
     display: flex;
     justify-content: center;

@@ -119,7 +119,7 @@ body{
     justify-content: space-between;
     align-items: center;
     display: block;
-    background: rgb(255, 241, 222);
+    background: white;
     z-index: 500;
 }
 
@@ -147,15 +147,15 @@ body{
     color: black;
     font-size: 1.7rem;
 }
-.headerNAV .header-networks .header-info a {
+.headerNAV .header-networks .header-info a{
     color: white;
     font-size: .9rem;
     text-decoration: none;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
 }
 
 .headerNAV .header-networks .header-info i {
-    padding-right: 1.5rem;
     color: var(--celeste-white);
 }
 
@@ -218,6 +218,7 @@ body{
 /*----icon-nav  ----*/
  .hamburger{
     display: none;
+    z-index: 400;
 }
 
 
@@ -239,8 +240,8 @@ body{
     
         .headerNAV .header-menu .hamburger {
             display: block;
-            z-index: 300;
-            background: rgb(255, 241, 222);
+            z-index: 400;
+            background: white;
         }
     
         .hamburger-inner,
@@ -260,7 +261,7 @@ body{
         .headerNAV .nav-panel {
             width: 60%;
             height: 100%;
-            background: rgb(255, 241, 222);
+            background: white;
             position: absolute;
             display: flex;
             flex-direction: column;
@@ -349,7 +350,18 @@ body{
 .headerNAV .header-icon li h3 {
     font-size: .9rem;
 }
-
+.headerNAV .header-networks .header-info a{
+    font-size: .8rem;
+}
+.headerNAV .header-networks .header-info i {
+    padding-right: 1.1rem;
+}
+.headerNAV .header-networks .header-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
 }
 @media(max-width: 394px){
     .headerNAV .header-networks .header-info {

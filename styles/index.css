@@ -148,35 +148,7 @@ body{
     color: grey;
 }
 
-.home .floating-icon{
-    position: fixed;
-    z-index: 10;
-    bottom: 2rem;
-    right: 2rem;
-    z-index: 100;
-}
-.home .floating-icon a{
-    text-decoration: none;
-    color: white;
-    font-size: 4.5rem;
-    background: green;
-    padding: .2rem;
-    border-radius: 50%;
-    z-index: 100;
-    animation: breathe 2s ease-in-out infinite;
-}
-/*Estilos con animation contorno respirando*/
-@keyframes breathe {
-  0% {
-    box-shadow: 0 0 0 0 rgba(49, 233, 32, 0.842);
-  }
-  70% {
-    box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  }
-}
+
 
 /*-----------------------*/
 .formulario-index{
@@ -340,7 +312,7 @@ body{
 .home .splide__slide img
 {
     width: 100%;
-    height: 60vh;
+    height: 50vh;
     position: relative;
     z-index: 2;
 }
