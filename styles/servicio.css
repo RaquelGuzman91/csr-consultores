@@ -149,21 +149,21 @@ body{
 }
 
 .service .container-service .imagen1 {
-    background-image: url('/img/imagen1.jpg');
+    background-image: url('../img/imagen1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .service .container-service .imagen2 {
-    background-image: url('/img/imagen2.avif');
+    background-image: url('../img/imagen2.avif');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .service .container-service .imagen3 {
-    background-image: url('/img/imagen3.jpg');
+    background-image: url('../img/imagen3.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -205,7 +205,7 @@ body{
 /**------   TESTIMONIALES   -----*/
 .testimoniales {
     width: 100%;
-    background-image: url('/img/servicio-index.jpg');
+    background-image: url('../img/servicio-index.jpg');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
