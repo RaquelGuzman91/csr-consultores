@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raquel Guzman"> 
+    <meta name="description" content="Desarrollo web Html, Css y JavaScript">
+    <meta name="keywords" content="código, HTML, y más">   <meta name="Url" content="">
+    <title>CSR Consultores</title>
+    <link rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/CSR-favi-icon.png">
+    <!----  Styles  ---->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/servicio.css">
+    <link rel="stylesheet" href="./styles/cursos.css">
+    <link rel="stylesheet" href="./styles/contacto.css">
+    
+    <!-- libreria icono font asewore-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- o enlace a la CDN a libreria splide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <!----  libreria CDN nav-menu   ------>
+    <link rel="stylesheet" href="./hamburgers-master/dist/hamburgers.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!----  libreria progressbars.js ---->
+    <!----  libreria AOS efectos pagina ---->
+    
+
+
+</head>
+
+<body>
+    <!--section header    -->
+    <header class="header" id="mainHeader">
+        <a class="logo" href="index.html"><img id="logo" src="./img/HEADER-lol.png"  alt="logo creativo"></a>
+        <nav>
+            <a href="somos.html">Somos</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="cursos.html">Otros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="bolq.html">Blog</a>
+        </nav>
+        <ul class="header-icon">
+            <li><a class="icon-phone" href="tel:+50237199449">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1 phone" data-name="Layer 1" viewBox="0 0 24 24" width="512" height="512"><path d="m23.5,11c-.276,0-.5-.224-.5-.5,0-5.238-4.262-9.5-9.5-9.5-.276,0-.5-.224-.5-.5s.224-.5.5-.5c5.79,0,10.5,4.71,10.5,10.5,0,.276-.224.5-.5.5Zm-3.5-.5c0-3.584-2.916-6.5-6.5-6.5-.276,0-.5.224-.5.5s.224.5.5.5c3.033,0,5.5,2.467,5.5,5.5,0,.276.224.5.5.5s.5-.224.5-.5Zm2.234,11.771l.978-1.125c.508-.508.788-1.184.788-1.902s-.28-1.395-.837-1.945l-2.446-1.873c-1.048-1.048-2.753-1.049-3.803-.003l-1.532,1.494c-3.68-1.499-6.678-4.5-8.294-8.303l1.488-1.525c1.049-1.049,1.049-2.756.043-3.756l-1.959-2.543c-1.017-1.017-2.813-.993-3.78-.023l-1.174,1.024C.605,2.886,0,4.373,0,5.976c0,7.749,10.275,18.024,18.024,18.024,1.603,0,3.089-.605,4.21-1.729ZM5.909,1.446l1.959,2.543c.659.659.659,1.732-.004,2.396l-1.722,1.766c-.138.142-.18.352-.106.536,1.729,4.305,5.113,7.688,9.286,9.28.182.07.388.027.527-.108l1.766-1.722s.003-.003.004-.005c.639-.64,1.704-.681,2.44.043l2.446,1.873c.659.659.659,1.731-.023,2.416l-.979,1.125c-.908.91-2.144,1.411-3.479,1.411C10.864,23,1,13.136,1,5.976c0-1.335.501-2.571,1.387-3.456l1.175-1.025c.336-.336.779-.5,1.215-.5.419,0,.831.152,1.133.452Z"/></svg>
+            </a></li>
+            <li>
+                <h2>Contáctanos</h2>
+                <h3>+502 3719-9449</h3>
+            </li>
+        </ul>
+
+    </header>
+
+    <!---------  HEADER    ----->
+    <header class="headerNAV" id="">
+        <div class="header-networks">
+            <div class="header-info">
+                <a href="mailto:servicioscsr@gmail.com?subject=Solicitud%20de%20información" target="_blank"><i class="fa-regular fa-envelope"></i>servicioscsr@gmail.com</a>
+                <a href="tel:+50237199449" target="_blank"><i class="fa-solid fa-phone"></i>+502 3719-9449</a>
+            </div>
+            <div class="header-icon">
+                <a href="https://www.facebook.com/ConsultoresCSR" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://maps.app.goo.gl/T3vzPuNKXb6qo6YB9" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <!-------   header-menu  ------->
+        <div class="header-menu navigation blur">
+            <nav class="nav-panel panel menu_list nav-links">
+                <div class="nav-logores">
+                    <figure class="logoNAV" href="index.html">
+                        <img id="logo" src="./img/logo-header-CSR.png" alt="logo creativo">
+                    </figure>
+                </div>
+                <a class="menu_link" href="somos.html">Somos</a>
+                <a class="menu_link" href="servicios.html">Servicios</a>
+                <a class="menu_link" href="cursos.html">Cursos</a>
+                <a class="menu_link" href="contacto.html">Contacto</a>
+                <a class="menu_link" href="bolq.html">Blog</a>
+            </nav>
+            <ul class="header-icon">
+                    <a class="logo" href="index.html"><img id="logo" src="./img/logo-header-CSR.png" alt="logo creativo"></a>
+                    <li><a class="icon-phoneNAV" href="tel:+50237199449" target="_blank"><i class="fa-solid fa-phone-volume"></i></a></li>
+                    <li class="li-icon-phoneNAV">
+                        <h2>Contáctanos</h2>
+                        <h3>+502 3719-9449</h3>
+                    </li>
+            </ul>
+
+
+            <!---- ICON-HAMBURGER    ---->
+        <button id="menu-btn" class="hamburger hamburger--squeeze" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        </div>
+       
+
+    </header>
+
+    <!-- section banner-index   -->
+    <section class="home">
+        <article class="title-index">
+            <div class="absolute-title">
+            <h3 class="title-vertical">Lunes a Viernes 8:00 a 17:00 Hrs.</h3>
+            </div>
+            <h2 class="title-bloq-index">Bienvenido a <span>CSR</span> consultoria</h2>
+            <p>Consultoría enfocada en material contable</p>
+            <a href="contacto.html">Más información</a>
+        </article>
+        <!--elementos index 
+        <ul class="index-url">
+            <li><a class="black" href="index.html">Home</a></li>
+            <li><a class="grey" href="">/</a></li>
+            <li><a class="red" href="">Somos</a></li>
+        </ul>-->
+        <div class="floating-icon">
+            <a href="https://wa.me/50237199449?text=Hola,%20quiero%20más%20información%20sobre%20su%20servicio" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <!--carousel-->
+        <section id="image-carousel" class="splide" id="splide" aria-label="Beautiful Images">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="./img/slider-index1.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/slider-index2.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/slider-index3.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./img/slider-index1.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/slider-index2.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/slider-index3.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+
+
+        </section>
+    </section>
+
+
+    <!-- section banner-cont    -->
+    <section id="somos" class="content">
+        <div class="container-content">
+            <article class="container-text effect desde-izquierda">
+                <h2>Sobre Nosotros</h2>
+                <h3>CSR Consultoría</h3>
+                <h4>Servicios y Reclutamiento</h4>
+                <p>Somos profesionales en materia<span> Contable, Fiscal, tributaria, Auditoría</span> y <span>Administración de empresas,</span>
+                    ofrecemos servicios personalizados y altamente calificados, <span>para pequeñas y grandes empresas.</span>
+                   Contamos con más de 20 años de servicio en el mercado y una cartera de clientes satisfechos de nuestros servicios.
+                   Nos caracterizamos por la responsabilidad,
+                   ética y moral que le imprimimos a nuestros servicios:
+                    <span>Outsourcing de cuentas por cobrar, cuentas por pagar e Inventarios Auditoría Externa.</span>
+                </p>
+            </article>
+            <article class="container-img effect desde-derecha">
+                <div class="img-icons" >
+                    <a href=""><i class="fa-solid fa-sitemap"></i></a>
+                    <h3>1,603</h3>
+                    <p>Proyectos terminados</p>
+                </div>
+            </article>
+        </div>
+
+        
+        <button onclick="location.href='contacto.html'" class="button-text">Solicitar un servicio contable</button>
+    </section>        
+
+    <!----  SERVICIOS-INDEX ----->
+    <!----SECTION-SERVICIOS -->
+    <section class="servicio">
+        <main class="container-servicio effect desde-abajo">
+            <article class="box" >
+                <a href="">
+                    <svg id="Layer_1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="m10.5 14v-1.184c.347-.124.661-.309.936-.543l1.028.594 1-1.732-1.019-.589c.033-.177.055-.359.055-.545s-.022-.368-.055-.545l1.019-.589-1-1.732-1.028.594c-.275-.235-.589-.419-.936-.543v-1.184h-2v1.184c-.347.124-.661.309-.936.543l-1.028-.594-1 1.732 1.019.589c-.033.177-.055.359-.055.545s.022.368.055.545l-1.019.589 1 1.732 1.028-.594c.275.235.589.419.936.543v1.184zm-1-5c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1zm12.5 6v-12h-20v12h-2v3c0 1.654 1.346 3 3 3h18c1.654 0 3-1.346 3-3v-3zm-18-10h16v10h-4.914l-1 1h-4.172l-1-1h-4.914zm18 13c0 .552-.448 1-1 1h-18c-.552 0-1-.448-1-1v-1h6.086l1 1h5.828l1-1h6.086zm-4-9h-3v-2h3zm0 4h-3v-2h3z"/></svg>
+                </a>                
+                <h2>Servicios Contables y Tributarios</h2>
+                <!-- <p>Procesamos su documentación contable en nuestras oficinas, Automatizamos los procesos contables y trabajamos en su empresa</p>-->
+                <p>Brindando a nuestros clientes un excelente servicio de forma profesional.</p>
+            </article>
+            <article class="box">
+                <a href="">
+                    <svg id="Layer_1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="m18.96 15.001c.552-.015 1.011.421 1.026.973s-.421 1.011-.973 1.026-1.011-.421-1.026-.973.421-1.011.973-1.026zm.04-4.161 5 3.777v7.383c0 1.103-.897 2-2 2h-6c-1.103 0-2-.897-2-2v-7.382zm4 4.275-4-3.022-4 3.023v6.884c0 .552.448 1 1 1h6c.552 0 1-.448 1-1zm1-12.615v9.61l-1-.755v-3.355h-22v13h11v1h-12v-19.5c0-1.378 1.122-2.5 2.5-2.5h19c1.379 0 2.5 1.122 2.5 2.5zm-1 4.5v-4.5c0-.827-.673-1.5-1.5-1.5h-19c-.827 0-1.5.673-1.5 1.5v4.5zm-19-4c-.552 0-1 .448-1 1s.448 1 1 1 1-.448 1-1-.448-1-1-1zm3 0c-.552 0-1 .448-1 1s.448 1 1 1 1-.448 1-1-.448-1-1-1zm3 0c-.552 0-1 .448-1 1s.448 1 1 1 1-.448 1-1-.448-1-1-1zm-2.476 11.394-1.17-1.17-.707.707 1.17 1.171c.266.264.614.397.964.397s.699-.132.965-.398l2.177-2.178-.707-.707-2.177 2.178c-.142.141-.374.141-.516 0zm-3.524 3.606h7v-2.325l-1 1v.325h-5v-5h2.604l1-1h-4.604z"/></svg>
+                </a>
+                <h2>Auditoria & Control interno</h2>
+                <p>Contamos con un excelente equipo de auditores que pueden hacer un trabajo de campo.</p>
+            </article>
+            <article class="box">
+                <a href="">
+                    <svg id="Layer_1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="m6.5 11c0-1.105.895-2 2-2s2 .895 2 2-.895 2-2 2-2-.895-2-2zm-1.5 5v1h7v-1c0-1.105-.895-2-2-2h-3c-1.105 0-2 .895-2 2zm19-.5c0 1.557-.795 2.93-2 3.738v4.762l-2.5-2.5-2.5 2.5v-4.762c-1.205-.808-2-2.182-2-3.738 0-2.481 2.019-4.5 4.5-4.5s4.5 2.019 4.5 4.5zm-6 0c0 .827.673 1.5 1.5 1.5s1.5-.673 1.5-1.5-.673-1.5-1.5-1.5-1.5.673-1.5 1.5zm6-12v7.316c-.823-.791-1.852-1.364-3-1.635v-2.181h-18v12h11.029c.276.431.605.825.971 1.178v1.822h-15v-18.5c0-1.93 1.57-3.5 3.5-3.5h17c1.93 0 3.5 1.57 3.5 3.5zm-18 0c0-.828-.672-1.5-1.5-1.5s-1.5.672-1.5 1.5.672 1.5 1.5 1.5 1.5-.672 1.5-1.5zm5 0c0-.828-.672-1.5-1.5-1.5s-1.5.672-1.5 1.5.672 1.5 1.5 1.5 1.5-.672 1.5-1.5z"/></svg>
+                </a>
+                <h2>Servicios para empresas extranjeras</h2>
+                <p>Asesoría y formación para empresas extranjeras que esten iniciando operaciones en Guatemala.</p>
+            </article>
+            <article class="box">
+                <a href="">
+                    <svg id="Layer_1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="m22 16v-13h-20v13h-2v2.5c0 1.379 1.122 2.5 2.5 2.5h19c1.379 0 2.5-1.121 2.5-2.5v-2.5zm-19-12h18v12h-5.707l-1 1h-4.586l-1-1h-5.707zm20 14.5c0 .827-.673 1.5-1.5 1.5h-19c-.827 0-1.5-.673-1.5-1.5v-1.5h7.293l1 1h5.414l1-1h7.293zm-11-6.5h1v2h-1zm4 2h-1v-6h1zm3 0h-1v-4h1zm-10-3.293-1.5-1.5-2.146 2.146-.707-.707 2.854-2.854 1.5 1.5 2.293-2.293h-2.293v-1h3c.551 0 1 .448 1 1v3h-1v-2.293l-3 3z"/></svg>
+                </a>
+                <h2>Outsourcing de cuentas por pagar</h2>
+                <p>Todo lo que necesita, para administrar su empresa en una sola solución.</p>
+            </article>
+            <article class="box">
+                <a href="">
+                    <svg id="Layer_1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="m20 15.5c0 .276-.224.5-.5.5h-1c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h1c.276 0 .5.224.5.5zm-.5 2.5h-1c-.276 0-.5.224-.5.5s.224.5.5.5h1c.276 0 .5-.224.5-.5s-.224-.5-.5-.5zm0-6h-1c-.276 0-.5.224-.5.5s.224.5.5.5h1c.276 0 .5-.224.5-.5s-.224-.5-.5-.5zm-3 3h-1c-.276 0-.5.224-.5.5s.224.5.5.5h1c.276 0 .5-.224.5-.5s-.224-.5-.5-.5zm0 3h-1c-.276 0-.5.224-.5.5s.224.5.5.5h1c.276 0 .5-.224.5-.5s-.224-.5-.5-.5zm0-6h-1c-.276 0-.5.224-.5.5s.224.5.5.5h1c.276 0 .5-.224.5-.5s-.224-.5-.5-.5zm3.5-6.5c0-.276-.224-.5-.5-.5h-11c-.276 0-.5.224-.5.5s.224.5.5.5h10.5v3h-4c-.276 0-.5.224-.5.5s.224.5.5.5h4.5c.276 0 .5-.224.5-.5zm-7 5.998s0 .002 0 .002v8c-.078 2.316-2.096 3.488-5.999 3.5-3.906-.012-5.924-1.184-6.001-3.483v-8.017s.002-.008.002-.013c.062-1.606 1.159-3.47 5.995-3.487 4.868.017 5.95 1.904 6.001 3.484v.014zm-11 3.997c.021.629.11 2.49 5.001 2.505 4.901-.016 4.978-1.887 4.999-2.511v-1.792c-.968.854-2.631 1.295-4.999 1.302-2.37-.007-4.033-.448-5.001-1.302v1.797zm0-3.983v.015c.021.597.11 2.458 5.001 2.473 4.87-.016 4.977-1.864 4.998-2.5-.064-1.648-1.747-2.489-5.001-2.5-2.24.008-4.928.45-4.998 2.512zm10 7.971v-1.786c-.968.854-2.631 1.295-4.999 1.303-2.37-.007-4.033-.448-5.001-1.302v1.802c.021.602.083 2.484 5.001 2.5 4.915-.016 4.978-1.898 4.999-2.517zm10.043-17.043c-.041-.18-.176-.323-.354-.372-.157-.043-3.887-1.068-7.689-1.068s-7.533 1.024-7.689 1.068c-.178.049-.313.192-.354.372-.011.047-.262 1.172-.506 2.994-.037.273.155.525.429.562.277.034.525-.155.562-.429.167-1.243.34-2.166.429-2.611.949-.238 4.061-.956 7.129-.956s6.18.717 7.129.956c.208 1.041.871 4.699.871 9.044s-.663 8.004-.871 9.044c-.899.226-3.738.881-6.641.95-.276.007-.495.236-.488.512.006.272.229.488.5.488h.012c3.625-.085 7.034-1.022 7.178-1.062.178-.049.313-.192.354-.372.01-.043.957-4.315.957-9.56s-.947-9.517-.957-9.56z"/></svg>
+                </a>
+                <h2>Consultoria fiscal</h2>
+                <p>Consultoría Tributaria y Corporativa Permanente, Planificación Tributaria y Corporativa.</p>
+            </article>
+            
+            <article class="box">
+                <a href="">
+                    <svg id="Layer_1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="m4 7c0-4.149 1.851-6 6-6 .856 0 1.587.075 2.232.229.537.129.869.668.74 1.206s-.667.867-1.205.74c-.484-.116-1.079-.175-1.768-.175-3.028 0-4 .972-4 4s.972 4 4 4c1.115 0 1.948-.147 2.548-.451.496-.25 1.095-.052 1.345.44.249.493.052 1.094-.44 1.344-.887.449-2.016.667-3.452.667-4.149 0-6-1.851-6-6zm6 7c-5.933 0-8.708 2.451-8.999 7.947-.028.551.395 1.022.946 1.051.534.021 1.022-.395 1.052-.946.154-2.911 1.04-4.61 3.019-5.433l-.009 1.524c-.704.245-1.008.824-1.008 1.856 0 1.429.571 2 2 2s2-.571 2-2c0-1.023-.3-1.601-.992-1.849l.013-2.032c.599-.077 1.252-.119 1.979-.119.538 0 1.033.024 1.5.065v2.147c-.882.387-1.5 1.266-1.5 2.288v1.5c0 .552.447 1 1 1s1-.448 1-1v-1.5c0-.276.225-.5.5-.5s.5.224.5.5v1.5c0 .552.447 1 1 1s1-.448 1-1v-1.5c0-1.023-.618-1.901-1.5-2.288v-1.769c2.32.741 3.335 2.472 3.501 5.61.028.552.505.977 1.052.946.552-.029.975-.5.946-1.051-.291-5.496-3.066-7.947-8.999-7.947zm13-8.5c0 3.07-1.43 4.5-4.5 4.5-1.232 0-3.319-.171-3.407-.178-.486-.04-.872-.425-.914-.911-.008-.085-.179-2.088-.179-3.411 0-3.07 1.43-4.5 4.5-4.5s4.5 1.43 4.5 4.5zm-2 0c0-1.939-.561-2.5-2.5-2.5s-2.5.561-2.5 2.5c0 .723.058 1.7.106 2.392.71.049 1.714.108 2.394.108 1.939 0 2.5-.561 2.5-2.5z"/></svg>
+                </a>
+                <h2>Administracion de empresas</h2>
+                <p>Brindamos conocimiento y control de tus finanzas, lo que le ayudará a tomar decisiones oportunas</p>
+            </article>
+            
+        </main>
+    </section>
+
+    <!----- CURSOS ------>
+    <section class="cursos">
+        <h2>Otros servicios</h2>
+        <main class="curso-container">
+                <article class="list effect desde-izquierda">
+                    <figure>
+                        <i class="fa-regular fa-circle-check"></i><p>Outsourcing de cuentas por cobrar</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Outsourcing de cuentas por pagar</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Inventarios auditoria externa</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Asesoria y formacion para empresas extranjeras</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Contabilidades atrasadas</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Omisos</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Inventarios</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Auditorias</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Asesoria Financiera</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Inscripcion ante la SAT</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Patentes de Comercio</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Inscripcion del Igss</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Administracion de planillas</p>
+                    </figure>
+                </article>
+                <article class="list effect desde-derecha">
+                    <figure>
+                        <i class="fa-regular fa-circle-check"></i><p>Apertura de agencia virtual</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Actualizacion de RTU</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Apertura de nuevo Nit</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>administracion de negocio</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Reclutamiento de personal contable</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Analisis de datos financieros</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Inscripcion de registro mercantil</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Constituciones de sociedades</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Clausura de empresas</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Facturas electronicas</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Asesoria empresarial</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Integracion de servicios deacuerdo a la necesidad</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Giro de las empresas PYMES, emprendedores u otros</p>
+                    </figure>
+                </article>
+                <h2 class="titlecheck">Somos un equipo de profesionales, dinámico y proactivo con conocimiento y experiencia.</h2>
+                <button onclick="location.href='contacto.html'" class="button-text">Solicitar una servicio contable</button>
+
+            </main>
+    </section>
+
+    <!--- TESTIMONIALES --><!------    SECTION-TESTIMONIALES   ----->
+    <section class="testimoniales">
+        <h2 class="title">Testimoniales</h2>
+        <main class="main-test">
+            <article class="container-slider effect desde-izquierda">
+                <article class="customers-slider">
+                    <section id="image-carousel" class="splide splide1" id="splide" aria-label="Beautiful Images">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="Layer_v" id="Layer_1"
+                                            data-name="Layer 1" viewBox="0 0 24 24">
+                                            <path
+                                                d="M10.457,4.373c-.068-.316-.287-.578-.584-.704-.139-.058-3.444-1.419-7.757,.056-.229,.079-.422,.238-.542,.449-.134,.235-.572,1.225-.572,4.095,0,2.728,.404,3.664,.645,3.98,.07,.091,.154,.17,.251,.232,.202,.13,1.36,.78,4.391,.78,.7,0,1.297-.032,1.805-.084-.027,.489-.068,.982-.122,1.474-.191,1.75-1.495,3.114-3.172,3.319-.822,.101-1.407,.849-1.307,1.672,.093,.76,.74,1.317,1.487,1.317,.061,0,.122-.004,.184-.011,3.066-.375,5.447-2.831,5.79-5.972,.121-1.108,.182-2.22,.182-3.304,0-.031-.001-.061-.003-.091-.007-4.084-.649-7.082-.677-7.208Z" />
+                                            <path
+                                                d="M22.995,11.579c-.007-4.082-.649-7.079-.677-7.206-.068-.316-.287-.578-.584-.704-.139-.058-3.444-1.419-7.757,.056-.229,.079-.422,.238-.542,.449-.134,.235-.572,1.225-.572,4.095,0,2.728,.404,3.664,.645,3.98,.069,.091,.154,.17,.251,.232,.202,.13,1.36,.78,4.391,.78,.7,0,1.297-.032,1.805-.084-.028,.49-.068,.982-.122,1.474-.191,1.75-1.495,3.114-3.172,3.319-.822,.101-1.407,.849-1.307,1.671,.093,.761,.74,1.318,1.487,1.318,.061,0,.122-.004,.184-.011,3.066-.375,5.447-2.831,5.79-5.972,.121-1.106,.183-2.218,.183-3.304,0-.032-.001-.063-.003-.094Z" />
+                                        </svg>
+                                    </a>
+                                    <p>Gracias por el compromiso y la responsabilidad de entregar el servicio contable
+                                        son muy puntuales y amables</p>
+                                    <h2>Jose Miguel Porras</h2>
+                                    <h3>Gerente de area comercial</h3>
+                                </li>
+                                <li class="splide__slide">
+                                    <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="Layer_v" id="Layer_1"
+                                            data-name="Layer 1" viewBox="0 0 24 24">
+                                            <path
+                                                d="M10.457,4.373c-.068-.316-.287-.578-.584-.704-.139-.058-3.444-1.419-7.757,.056-.229,.079-.422,.238-.542,.449-.134,.235-.572,1.225-.572,4.095,0,2.728,.404,3.664,.645,3.98,.07,.091,.154,.17,.251,.232,.202,.13,1.36,.78,4.391,.78,.7,0,1.297-.032,1.805-.084-.027,.489-.068,.982-.122,1.474-.191,1.75-1.495,3.114-3.172,3.319-.822,.101-1.407,.849-1.307,1.672,.093,.76,.74,1.317,1.487,1.317,.061,0,.122-.004,.184-.011,3.066-.375,5.447-2.831,5.79-5.972,.121-1.108,.182-2.22,.182-3.304,0-.031-.001-.061-.003-.091-.007-4.084-.649-7.082-.677-7.208Z" />
+                                            <path
+                                                d="M22.995,11.579c-.007-4.082-.649-7.079-.677-7.206-.068-.316-.287-.578-.584-.704-.139-.058-3.444-1.419-7.757,.056-.229,.079-.422,.238-.542,.449-.134,.235-.572,1.225-.572,4.095,0,2.728,.404,3.664,.645,3.98,.069,.091,.154,.17,.251,.232,.202,.13,1.36,.78,4.391,.78,.7,0,1.297-.032,1.805-.084-.028,.49-.068,.982-.122,1.474-.191,1.75-1.495,3.114-3.172,3.319-.822,.101-1.407,.849-1.307,1.671,.093,.761,.74,1.318,1.487,1.318,.061,0,.122-.004,.184-.011,3.066-.375,5.447-2.831,5.79-5.972,.121-1.106,.183-2.218,.183-3.304,0-.032-.001-.063-.003-.094Z" />
+                                        </svg>
+                                    </a>
+                                    <p>Saludos y gracias por el servicio de Outsourcing muy acertado en el personal</p>
+                                    <h2>Miguel Orlando Carías Chávez</h2>
+                                    <h3>Gerente de analista de datos</h3>
+                                </li>
+                                <li class="splide__slide">
+                                   <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="Layer_v" id="Layer_1"
+                                            data-name="Layer 1" viewBox="0 0 24 24">
+                                            <path
+                                                d="M10.457,4.373c-.068-.316-.287-.578-.584-.704-.139-.058-3.444-1.419-7.757,.056-.229,.079-.422,.238-.542,.449-.134,.235-.572,1.225-.572,4.095,0,2.728,.404,3.664,.645,3.98,.07,.091,.154,.17,.251,.232,.202,.13,1.36,.78,4.391,.78,.7,0,1.297-.032,1.805-.084-.027,.489-.068,.982-.122,1.474-.191,1.75-1.495,3.114-3.172,3.319-.822,.101-1.407,.849-1.307,1.672,.093,.76,.74,1.317,1.487,1.317,.061,0,.122-.004,.184-.011,3.066-.375,5.447-2.831,5.79-5.972,.121-1.108,.182-2.22,.182-3.304,0-.031-.001-.061-.003-.091-.007-4.084-.649-7.082-.677-7.208Z" />
+                                            <path
+                                                d="M22.995,11.579c-.007-4.082-.649-7.079-.677-7.206-.068-.316-.287-.578-.584-.704-.139-.058-3.444-1.419-7.757,.056-.229,.079-.422,.238-.542,.449-.134,.235-.572,1.225-.572,4.095,0,2.728,.404,3.664,.645,3.98,.069,.091,.154,.17,.251,.232,.202,.13,1.36,.78,4.391,.78,.7,0,1.297-.032,1.805-.084-.028,.49-.068,.982-.122,1.474-.191,1.75-1.495,3.114-3.172,3.319-.822,.101-1.407,.849-1.307,1.671,.093,.761,.74,1.318,1.487,1.318,.061,0,.122-.004,.184-.011,3.066-.375,5.447-2.831,5.79-5.972,.121-1.106,.183-2.218,.183-3.304,0-.032-.001-.063-.003-.094Z" />
+                                        </svg>
+                                    </a>
+                                    <p>Quede agradecido por la resolución de un problema contable, si son expertos</p>
+                                    <h2>Oscar Alfonso Garcia Flores</h2>
+                                    <h3>Gerente de ventas</h3>
+                                </li>
+                                <li class="splide__slide">
+                                   <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="Layer_v" id="Layer_1"
+                                            data-name="Layer 1" viewBox="0 0 24 24">
+                                            <path
+                                                d="M10.457,4.373c-.068-.316-.287-.578-.584-.704-.139-.058-3.444-1.419-7.757,.056-.229,.079-.422,.238-.542,.449-.134,.235-.572,1.225-.572,4.095,0,2.728,.404,3.664,.645,3.98,.07,.091,.154,.17,.251,.232,.202,.13,1.36,.78,4.391,.78,.7,0,1.297-.032,1.805-.084-.027,.489-.068,.982-.122,1.474-.191,1.75-1.495,3.114-3.172,3.319-.822,.101-1.407,.849-1.307,1.672,.093,.76,.74,1.317,1.487,1.317,.061,0,.122-.004,.184-.011,3.066-.375,5.447-2.831,5.79-5.972,.121-1.108,.182-2.22,.182-3.304,0-.031-.001-.061-.003-.091-.007-4.084-.649-7.082-.677-7.208Z" />
+                                            <path
+                                                d="M22.995,11.579c-.007-4.082-.649-7.079-.677-7.206-.068-.316-.287-.578-.584-.704-.139-.058-3.444-1.419-7.757,.056-.229,.079-.422,.238-.542,.449-.134,.235-.572,1.225-.572,4.095,0,2.728,.404,3.664,.645,3.98,.069,.091,.154,.17,.251,.232,.202,.13,1.36,.78,4.391,.78,.7,0,1.297-.032,1.805-.084-.028,.49-.068,.982-.122,1.474-.191,1.75-1.495,3.114-3.172,3.319-.822,.101-1.407,.849-1.307,1.671,.093,.761,.74,1.318,1.487,1.318,.061,0,.122-.004,.184-.011,3.066-.375,5.447-2.831,5.79-5.972,.121-1.106,.183-2.218,.183-3.304,0-.032-.001-.063-.003-.094Z" />
+                                        </svg>
+                                    </a>
+                                    <p>Agradezco mucho el conocimiento proporcionado y la paciencia para mostrarnos las herramientas que nos serviran para mejorar las gestiones</p>
+                                    <h2>Jose Miguel Porras Amado</h2>
+                                    <h3>Marketing y ventas</h3>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+    
+                </article>
+            </article>
+            <!----- ----->
+            <article class="test-icon effect desde-derecha">
+                <div class="icon">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_test" data-name="Layer 1" viewBox="0 0 24 24"
+                            width="512" height="512">
+                            <path
+                                d="M15.067,15.998c6.589-.024,8.933-3.51,8.933-6.498,0-1.676-1.185-3.077-2.76-3.418,.311-.882,.546-1.731,.702-2.489,.18-.876-.044-1.778-.613-2.476-.579-.71-1.437-1.117-2.352-1.117H5.023c-.916,0-1.773,.407-2.352,1.117-.569,.697-.793,1.6-.613,2.476,.156,.759,.391,1.607,.702,2.489-1.575,.341-2.76,1.742-2.76,3.418,0,2.988,2.344,6.473,8.933,6.498,.03,.211,.067,.421,.067,.639v3.363c0,1.826-1.536,1.992-2,2h-2v2h14v-2h-1.992c-.472-.008-2.008-.174-2.008-2v-3.363c0-.218,.037-.428,.067-.639Zm5.433-7.998c.827,0,1.5,.673,1.5,1.5,0,2.048-1.631,4.225-6.124,4.475,.18-.233,.382-.445,.609-.626,1.718-1.373,3.024-3.351,3.959-5.349h.057ZM2,9.5c0-.827,.673-1.5,1.5-1.5h.057c.935,1.998,2.24,3.976,3.958,5.349,.227,.181,.43,.393,.609,.626-4.493-.25-6.124-2.427-6.124-4.475Zm11,7.137v3.363c0,.806,.191,1.459,.487,2h-2.973c.295-.541,.487-1.194,.487-2v-3.363c0-1.946-.814-3.714-2.236-4.851-2.463-1.969-4.159-5.735-4.746-8.596-.08-.39,.094-.674,.203-.81,.198-.242,.49-.381,.803-.381h13.953c.312,0,.604,.139,.802,.381,.11,.136,.284,.421,.204,.81-.587,2.859-2.282,6.626-4.746,8.596-1.421,1.136-2.236,2.903-2.236,4.851Zm-.476-12.637l.652,2.005h2.109l.3,.918-1.706,1.24,.652,2.006-.781,.567-1.705-1.236-1.71,1.237-.781-.567,.652-2.006-1.706-1.24,.3-.918h2.107l.652-2,.965-.006Z" />
+                        </svg>
+                    </a>
+                    <figure>
+                        <h2>1,608</h2>
+                        <p>Informes Completados</p>
+                    </figure>
+                </div>
+                <div class="icon">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_test" data-name="Layer 1" viewBox="0 0 24 24">
+                            <path
+                                d="m15,8h-6v-1.5c0-.828.672-1.5,1.5-1.5h3c.828,0,1.5.672,1.5,1.5v1.5Zm-3-4c1.105,0,2-.895,2-2s-.895-2-2-2-2,.895-2,2,.895,2,2,2Zm10.5,7h-3c-.828,0-1.5.672-1.5,1.5v1.5h6v-1.5c0-.828-.672-1.5-1.5-1.5Zm-1.5-1c1.105,0,2-.895,2-2s-.895-2-2-2-2,.895-2,2,.895,2,2,2Zm-15,.5c0-.828-.672-1.5-1.5-1.5H1.5c-.828,0-1.5.672-1.5,1.5v1.5h6v-1.5Zm-3-2.5c1.105,0,2-.895,2-2s-.895-2-2-2-2,.895-2,2,.895,2,2,2Zm21,11.5v4.5H0v-7.5c0-1.378,1.122-2.5,2.5-2.5h4c.171,0,.338.017.5.05v-1.55c0-1.378,1.122-2.5,2.5-2.5h5c1.379,0,2.5,1.122,2.5,2.5v4.55c.162-.033.329-.05.5-.05h4c1.379,0,2.5,1.122,2.5,2.5Zm-15,2.5h6v-9.5c0-.276-.225-.5-.5-.5h-5c-.276,0-.5.224-.5.5v9.5Zm-7,0h5v-5.5c0-.276-.224-.5-.5-.5H2.5c-.276,0-.5.224-.5.5v5.5Zm20-2.5c0-.276-.225-.5-.5-.5h-4c-.275,0-.5.224-.5.5v2.5h5v-2.5Z" />
+                        </svg>
+                    </a>
+                    <figure>
+                        <h2>1,204</h2>
+                        <p>Servicios Completados</p>
+                    </figure>
+                </div>
+            </article>
+        </main>
+    </section>
+
+    <!---   section-development -->
+    <section class="development">
+        <article class="text-index">
+            <h2 class="effect desde-abajo">Conoce sobre nosotros</h2>
+        </article>
+        <article class="text-second">
+            <main class="main">
+                <div class="development-title">
+                    <h2 class="effect desde-izquierda">Desarrollo de Estrategias</h2>
+                </div>
+
+                <div class="development-icon effect desde-derecha">
+                    <figure class="figure">
+                        <a href=""><i class="fa-regular fa-calendar"></i></a>
+                        <p>Formamos <br> personas y <br> negocios <br> desde el <br> año 2005</p>
+                    </figure>
+                </div>
+            </main>
+        </article>
+    </section>
+
+    <!----  section-business -->
+    <section class="busines">
+        <div class="busines-container">
+            <article class="information effect desde-izquierda">
+                <h2>Somos desarrollo</h2>
+                <h3>Desarrollo y evolución empresarial</h3>
+                <p>Contamos con un equipo de trabajo formado por profesionales debidamente registrados.</p>
+                <div class="busines-icons">
+                    <div class="estadistica">
+                        <div id="circle1" class="circle-container"></div>
+                        <h4>Clientes satisfechos</h4>
+                    </div>
+                    <div class="estadistica">
+                        <div id="circle2" class="circle-container"></div>
+                        <h4>Informes entregados</h4>
+                    </div>
+                </div>
+            </article>
+
+            <!-- article-acordion  -->
+            <article class="acordion effect desde-derecha">
+                <div class="menu">
+                   
+                    <div class="question">
+                        <input type="checkbox" id="type1" class="accordion">
+                        <label for="type1">Experiencia y Trayectoria
+                            <div class="icon">
+                                <span aria-hidden="true"></span>
+                            </div>
+                        </label>
+                        <ul id="link1">
+                            <li>
+                                A lo largo del tiempo hemos superado diversos desafíos.
+                                Nuestra trayectoria confirma la experiencia y capacidad de adaptación a cambios
+                                en el entorno empresarial. Nos esforzamos por establecer relaciones sólidas con nuestros clientes
+                                y mantenemos el compromiso de entregar los servicios en el tiempo establecido.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="question">
+                        <input type="checkbox" id="type2" class="accordion">
+                        <label for="type2">Profesionales Activos
+                            <div class="icon">
+                                <span aria-hidden="true"></span>
+                            </div>
+                        </label>
+                        <ul id="link2">
+                            <li>
+                                Somos una organizacion formada por expertos profesionales, dedicados a prestar servicio de
+                                contabilidad, auditoria y asesoria fiscal, asi como todo tipo de asesores empresarial,
+                                con experiencia en el ámbito financiero, tributario con enfoque a integracion de servicos.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="question">
+                        <input type="checkbox" id="type3" class="accordion">
+                        <label for="type3">Reconocimiento y Referencia
+                            <div class="icon">
+                                <span aria-hidden="true"></span>
+                            </div>
+                        </label>
+                        <ul id="link3">
+                            <li>
+                                Hemos acumulado horas de servicios de financiero, asesoría y consultoría de la mano de instituciones
+                                que son un referente en la formación y nos permiten asegurar soluciones efectivas de nuestros clientes
+                                segun la etapa de crecimiento de cada empresa.
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-----section-service -->
+    <section class="service">
+        <article class="container-service">
+            <div class="service-img imagen1 effect desde-izquierda">
+                <h2>Reclutamiento... <br> Personal contable</h2>
+            </div>
+            <div class="service-img imagen2 effect desde-abajo">
+                <h2>Asesoría... <br> Ruta al Éxito</h2>
+            </div>
+            <div class="service-img imagen3 effect desde-derecha">
+                <h2>Consultoría... <br> Asegurar la Implementación</h2>
+            </div>
+        </article>
+    </section>
+
+    <!-- section-sliders     ---->
+    <section class="customers">
+        <h2 class="effect desde-abajo">Contamos con una amplia cartera de clientes:</h2>
+        <article class="customers-slider">
+             <section id="image-carousel" class="splide splide2" id="splide" aria-label="Beautiful Images">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="img/logo1-bi-banco.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo2-cultura-digital.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo3-guatemala-antigua.webp" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo4-aceite-ideal.webp" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo5-samboro.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo6-altamira.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo7-byb.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo8-ECOMA-LOGO.webp" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo9-made-in-guatemala.webp" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo10-inmobilidaria.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo11-isopan.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo12-cbc.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        </article>
+    </section>
+
+
+
+    
+     <!------ SECTION-FORM  -------->
+    <section class="contacto-contacto">
+        <article class="title-1">
+            <h2>Contáctanos</h2>
+        </article>
+    </section>
+    
+<!------    CONTACTO-FORMULARIO  ------->
+    <section class="formulario-index">
+        <article class="index-form">
+            <form action="">
+            <label for="">Nombre<span>*</span></label>
+            <input type="text" placeholder="Nombre y Apellido">
+            <main class="grid-label">
+                <figure>
+                    <label for="">Telefono <span>*</span></label>
+                    <input type="text" placeholder="Telefono movil">
+                </figure>
+                <figure>
+                    <label for="">Correo electronico <span>*</span></label>
+                    <input type="text" placeholder="Correo electronico">
+                </figure>
+                <figure>
+                    <label for="">Puesto <span>*</span></label>
+                    <input type="text" placeholder="Puesto que desempeña">
+                </figure>
+                <figure>
+                    <label for="">Empresa <span>*</span></label>
+                    <input type="text" placeholder="Empresa en que labora">
+                </figure>
+            </main>
+            <label class="label-textarea" for="">¿Como podemos ayudarte? <span>*</span></label>
+            <textarea name="" id="" rows="6" placeholder="Describe tu solicitud para que podamos ayudarte de la mejor manera posible"></textarea>
+            <button class="button-form" type="submit">Enviar</button>
+        </form>
+        </article>
+    </section>
+    <!-----     footer  ------>
+    <footer class="footer">
+        <article class="contaier-footer">
+            <div class="footer-header">
+                <div class="img">
+                    <a href="index.html"><img src="img/HEADER-lol.png" alt=""></a>
+                </div>
+                <h2>¿Deseas iniciar tu empresa, nosotros te apoyamos con lo administrativo <span>+ 502 3719-9449</span></h2>
+            </div>
+            <div class="footer-nav">
+                <article class="footer-card"><a href="">&copy;2025 Copyrights by diseño web Guatemala</a></article>
+                <article class="footer-networks">
+                    <a class="networks" href="https://www.facebook.com/ConsultoresCSR" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="networks" href="https://maps.app.goo.gl/T3vzPuNKXb6qo6YB9" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+                    <a class="networks" href="mailto:servicioscsr@gmail.com?subject=Solicitud%20de%20información" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                    <a class="networks" href="https://wa.me/50237199449?text=Hola,%20quiero%20más%20información%20sobre%20su%20servicio" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </article>
+                <article class="footer-card-im">
+                    <a href="index.html"><img src="img/HEADER-lol.png" alt=""></a>
+                </article>
+            </div>
+        </article>
+    </footer>
+
+
+    <!-----      script inicia script a libreria    ---->
+    
+
+
+    <div class="nav-overlay"></div>
+
+    <script src="header.js"></script>
+    <script src="modules.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/progressbar.js"></script>
+    <script src="circulo.js"></script>
+    <script src="splide-sliders.js"></script>
+    <script src="efectos.js"></script>
+
+
+</body>
+
+</html>

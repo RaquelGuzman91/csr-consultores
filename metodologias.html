@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raquel Guzman"> 
+    <meta name="description" content="Desarrollo web Html, Css y JavaScript">
+    <meta name="keywords" content="código, HTML, y más">   <meta name="Url" content="">
+    <title>CSR | Blog</title>
+    <link rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/CSR-favi-icon.png">
+    <!----  Styles  ---->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/cursos.css">
+    <link rel="stylesheet" href="./styles/razonesparaparenderSQL.CSS">
+    
+    <!-- libreria icono font asewore-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- o enlace a la CDN a libreria splide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <!----  libreria CDN nav-menu   ------>
+    <link rel="stylesheet" href="./hamburgers-master/dist/hamburgers.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!----  libreria progressbars.js ---->
+    
+
+
+</head>
+
+<body>
+    <!--section header    -->
+    <header class="header" id="mainHeader">
+        <a class="logo" href="index.html"><img id="logo" src="./img/HEADER-lol.png"  alt="logo creativo"></a>
+        <nav>
+            <a href="somos.html">Somos</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="cursos.html">Otros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="bolq.html">Blog</a>
+        </nav>
+        <ul class="header-icon">
+            <li><a class="icon-phone" href="tel:+50237199449">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1 phone" data-name="Layer 1" viewBox="0 0 24 24" width="512" height="512"><path d="m23.5,11c-.276,0-.5-.224-.5-.5,0-5.238-4.262-9.5-9.5-9.5-.276,0-.5-.224-.5-.5s.224-.5.5-.5c5.79,0,10.5,4.71,10.5,10.5,0,.276-.224.5-.5.5Zm-3.5-.5c0-3.584-2.916-6.5-6.5-6.5-.276,0-.5.224-.5.5s.224.5.5.5c3.033,0,5.5,2.467,5.5,5.5,0,.276.224.5.5.5s.5-.224.5-.5Zm2.234,11.771l.978-1.125c.508-.508.788-1.184.788-1.902s-.28-1.395-.837-1.945l-2.446-1.873c-1.048-1.048-2.753-1.049-3.803-.003l-1.532,1.494c-3.68-1.499-6.678-4.5-8.294-8.303l1.488-1.525c1.049-1.049,1.049-2.756.043-3.756l-1.959-2.543c-1.017-1.017-2.813-.993-3.78-.023l-1.174,1.024C.605,2.886,0,4.373,0,5.976c0,7.749,10.275,18.024,18.024,18.024,1.603,0,3.089-.605,4.21-1.729ZM5.909,1.446l1.959,2.543c.659.659.659,1.732-.004,2.396l-1.722,1.766c-.138.142-.18.352-.106.536,1.729,4.305,5.113,7.688,9.286,9.28.182.07.388.027.527-.108l1.766-1.722s.003-.003.004-.005c.639-.64,1.704-.681,2.44.043l2.446,1.873c.659.659.659,1.731-.023,2.416l-.979,1.125c-.908.91-2.144,1.411-3.479,1.411C10.864,23,1,13.136,1,5.976c0-1.335.501-2.571,1.387-3.456l1.175-1.025c.336-.336.779-.5,1.215-.5.419,0,.831.152,1.133.452Z"/></svg>
+            </a></li>
+            <li>
+                <h2>Contáctanos</h2>
+                <h3>+502 3719-9449</h3>
+            </li>
+        </ul>
+
+    </header>
+
+    <!---------  HEADER    ----->
+    <header class="headerNAV" id="">
+        <div class="header-networks">
+            <div class="header-info">
+                <a href="mailto:servicioscsr@gmail.com?subject=Solicitud%20de%20información" target="_blank"><i class="fa-regular fa-envelope"></i>servicioscsr@gmail.com</a>
+                <a href="tel:+50237199449" target="_blank"><i class="fa-solid fa-phone"></i>+502 3719-9449</a>
+            </div>
+            <div class="header-icon">
+                <a href="https://www.facebook.com/ConsultoresCSR" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://maps.app.goo.gl/T3vzPuNKXb6qo6YB9" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <!-------   header-menu  ------->
+        <div class="header-menu navigation blur">
+            <nav class="nav-panel panel menu_list nav-links">
+                <div class="nav-logores">
+                    <figure class="logoNAV" href="index.html">
+                        <img id="logo" src="./img/logo-header-CSR.png" alt="logo creativo">
+                    </figure>
+                </div>
+                <a class="menu_link" href="somos.html">Somos</a>
+                <a class="menu_link" href="servicios.html">Servicios</a>
+                <a class="menu_link" href="cursos.html">Cursos</a>
+                <a class="menu_link" href="contacto.html">Contacto</a>
+                <a class="menu_link" href="bolq.html">Blog</a>
+            </nav>
+            <ul class="header-icon">
+                    <a class="logo" href="index.html"><img id="logo" src="./img/logo-header-CSR.png" alt="logo creativo"></a>
+                    <li><a class="icon-phoneNAV" href="tel:+50237199449" target="_blank"><i class="fa-solid fa-phone-volume"></i></a></li>
+                    <li class="li-icon-phoneNAV">
+                        <h2>Contáctanos</h2>
+                        <h3>+502 3719-9449</h3>
+                    </li>
+            </ul>
+
+
+            <!---- ICON-HAMBURGER    ---->
+        <button id="menu-btn" class="hamburger hamburger--squeeze" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        </div>
+       
+
+    </header>
+
+    <!-- section banner-index   -->
+    <section class="index">
+        <h2 class="title-bloq">Metodologías Ágiles</h2>
+        <!--elementos index -->
+        <ul class="index-url">
+            <li><a class="black" href="index.html">Home</a></li>
+            <li><a class="grey" href="">/</a></li>
+            <li><a class="red" href="">Blog</a></li>
+        </ul>
+        <div class="floating-icon">
+            <a href="https://wa.me/50237199449?text=Hola,%20quiero%20más%20información%20sobre%20su%20servicio" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <!--carousel-->
+        <section id="image-carousel" class="splide" id="splide" aria-label="Beautiful Images">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="./img/slider-index1.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/slider-index2.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/slider-index3.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./img/slider-index1.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/slider-index2.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/slider-index3.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+
+
+        </section>
+    </section>
+
+
+    <!-----  BLOG-INDEX-5RAZONES ------>
+    <section class="blog-1">
+        <main class="main-blog effect desde-abajo">
+            <figure class="bloq-img">
+                <img src="./img/metodologia-agile-ventajasSCRUM.jpg" alt="">
+            </figure>
+            <article class="blog-text">
+                <p>Las metodologías ágiles son un enfoque de gestión de proyectos y desarrollo de software que se han vuelto cada vez más populares en los últimos años.</p>
+                <p>Estas metodologías se centran en la colaboración, la adaptabilidad y la entrega continua de valor al cliente. Aquí te proporciono un resumen de las metodologías ágiles más comunes:</p>
+                <ul>
+                    <li><p>Scrum: Scrum es una de las metodologías ágiles más conocidas. Se basa en ciclos de desarrollo cortos llamados "sprints", que generalmente duran de 2 a 4 semanas. Scrum se enfoca en la colaboración del equipo, la transparencia y la adaptabilidad. Un equipo Scrum se organiza en roles como Scrum Master, Product Owner y el equipo de desarrollo.</p></li>
+                    <li><p>Kanban: Kanban se basa en la visualización de tareas en un tablero. Las tarjetas representan unidades de trabajo y se mueven a través del tablero de acuerdo con el flujo de trabajo. El objetivo es maximizar la eficiencia y la entrega continua sin sobrecargar al equipo.</p></li>
+                    <li><p>Extreme Programming (XP): XP es una metodología ágil que se enfoca en la calidad del software y la satisfacción del cliente. Se basa en prácticas como la programación en parejas, pruebas unitarias, integración continua y la simplicidad en el diseño.</p></li>
+                    <li><p>Lean Agile: El enfoque Lean Agile combina principios del Lean Manufacturing con metodologías ágiles. Busca eliminar el desperdicio y mejorar la eficiencia a lo largo del ciclo de desarrollo.</p></li>
+                    <li><p>Dynamic Systems Development Method (DSDM): DSDM es una metodología ágil que se centra en la entrega de proyectos a tiempo y dentro del presupuesto. Se basa en la colaboración y en la priorización de características.</p></li>
+                </ul>
+            </article>
+        </main>
+    </section>
+
+    <!-- CURSOS-INDEX-INFO   -->
+    <section class="cursos">
+        <h2>Catalogo de Cursos</h2>
+        <main class="curso-container">
+                <article class="list effect desde-izquierda">
+                    <figure>
+                        <i class="fa-regular fa-circle-check"></i><p>Microsoft 365 Word, Excel, Power Point (+)</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Análisis de Datos con Microsoft Excel</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Microsoft Power BI</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Microsoft Power Apps (Creación de Aplicaciones)</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Microsoft Power Automate (Automatización de Procesos)</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Business Intelligence</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Fundamentos de Estadística para los Negocios</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Transformación Digital</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Marketing Digital</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Generación de Contenidos</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Mercadeo Estratégico</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Pensamiento Estratégico</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Integración de Equipos de Trabajo</p>
+                    </figure>
+                </article>
+                <article class="list effect desde-derecha">
+                    <figure>
+                        <i class="fa-regular fa-circle-check"></i><p>SEO - SEM</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Comportamiento del Consumidor</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Social Selling</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Estrategias Digitales para Incrementar las Ventas</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Design Thinking</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Innovación a través de la Metodología SCAMPER</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>El Proceso Comercial</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Digital Ads (Meta y Google)</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Podcast y Streaming</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Modelos de Competencias para Equipos Comerciales</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Microsoft Project</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Metodología SCRUM para Administración de Proyectos</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Coach Comercial por Competencias</p>
+                    </figure>
+                </article>
+                <h2 class="titlecheck">Todos nuestros cursos y programas están disponibles en formato presencial, virtual e in company</h2>
+                <button class="button-text">Solicitar una propuesta de formación</button>
+
+            </main>
+    </section>
+    <!-- section banner-cont    -->
+    
+
+    <!---   section-development -->
+    
+    <!----  section-business -->
+    
+
+    <!-----section-service -->
+    
+
+    <!-- section-sliders     ---->
+    <section class="customers">
+        <h2>Nuestros facilitadores han formado personal en diferentes organizaciones, entre ellas:</h2>
+        <article class="customers-slider">
+             <section id="image-carousel" class="splide splide2" id="splide" aria-label="Beautiful Images">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="img/logo1-bi-banco.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo2-cultura-digital.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo3-guatemala-antigua.webp" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo4-aceite-ideal.webp" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo5-samboro.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo6-altamira.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo7-byb.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo8-ECOMA-LOGO.webp" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo9-made-in-guatemala.webp" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo10-inmobilidaria.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo11-isopan.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo12-cbc.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        </article>
+    </section>
+
+
+    
+
+    <!-----     footer  ------>
+    <footer class="footer">
+        <article class="contaier-footer">
+            <div class="footer-header">
+                <div class="img">
+                    <a href="#"><img src="img/logo.png" alt=""></a>
+                </div>
+                <h2>¿Deseas iniciar tu proyecto de formación? <span>+ 502 2393-4579</span></h2>
+            </div>
+            <div class="footer-nav">
+                <article class="footer-card"><a href="">&copy;© 2023 Copyrights by CREATIVONET</a></article>
+                <article class="footer-networks">
+                    <a class="networks" href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="networks" href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a class="networks" href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a class="networks" href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </article>
+                <article class="footer-card-im">
+                    <a href=""><img src="img/logo.png" alt=""></a>
+                </article>
+            </div>
+        </article>
+    </footer>
+
+
+
+
+
+
+<div class="nav-overlay"></div>
+
+    <script src="header.js"></script>
+    <script src="modules.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/progressbar.js"></script>
+    <script src="circulo.js"></script>
+    <script src="splide-sliders.js"></script>
+    <script src="efectos.js"></script>
+
+
+</body>
+
+</html>

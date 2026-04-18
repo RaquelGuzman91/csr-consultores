@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --celeste-white: #fff;
+    --celeste-c1: #C8CDD5;
+    --celeste-c2: #8BA0B4;
+    --celeste-c3: #2D5782;
+    --celeste-c4:#2A547E;
+    --celeste-black:#13273a;
+}
+
+
+
+body{
+    overflow-x: hidden;
+}
+
+/*----   servicio   --*/
+.servicio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem .5rem;
+}
+
+.servicio .container-servicio {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.servicio .container-servicio .box {
+    flex: 1 1 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+    padding: 4rem;
+    border: 1px solid rgb(214, 214, 214);
+}
+
+.servicio .container-servicio .box a {
+    font-size: 2rem;
+}
+
+.servicio .container-servicio .box #Layer_1 {
+    width: 60px;
+    height: 60px;
+    transition: all 500ms ease;
+}
+.servicio .container-servicio .box h2{
+    font-family: "Saira", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.servicio .container-servicio .box p {
+    line-height: 2rem;
+    color: rgb(116, 116, 116);
+}
+
+.servicio .container-servicio .box:hover #Layer_1 {
+    fill: var(--celeste-c4);
+    animation: pulsoEscala 1s infinite alternate;
+}
+
+/* Definición de la animación */
+@keyframes pulsoEscala {
+    from {
+        transform: scale(1);
+        /* tamaño normal */
+    }
+
+    to {
+        transform: scale(0.75);
+        /* más pequeño */
+    }
+}
+
+
+
+/*---------------------*/
+.button-section {
+    width: 100%;
+    min-height: 35vh;
+    padding: 2rem .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.button-section .container-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-section .container-button .button-text {
+    background: var(--celeste-c4);
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: .7rem 3rem;
+    z-index: 20;
+    bottom: 2rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/*------    SECTION-SERVICIO    -----*/
+/*----- service -----*/
+.service {
+    width: 100%;
+    min-height: 90vh;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.service .container-service {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.service .container-service .service-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex: 1 1 15rem;
+    height: 350px;
+}
+
+.service .container-service .service-img::after {
+    content: '';
+    background: rgba(0, 0, 0, 0.342);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 500ms ease;
+}
+
+.service .container-service .imagen1 {
+    background-image: url('/img/imagen1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.service .container-service .imagen2 {
+    background-image: url('/img/imagen2.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.service .container-service .imagen3 {
+    background-image: url('/img/imagen3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.service .container-service .service-img h2 {
+    color: white;
+    font-size: 1.7rem;
+    z-index: 1;
+    text-align: center;
+}
+
+.service .container-service .service-img::before {
+    content: '';
+    background: rgba(0, 0, 0, 0.486);
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    transform: scale(.95);
+    transition: all 500ms ease;
+}
+
+.service .container-service .service-img:hover::before {
+    content: '';
+    background: rgba(0, 0, 0, 0.486);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.service .container-service .service-img:hover::after {
+    content: '';
+    background: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/**------   TESTIMONIALES   -----*/
+.testimoniales {
+    width: 100%;
+    background-image: url('/img/servicio-index.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    padding: 2rem .5rem;
+}
+
+.testimoniales::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #2a547eec;
+    position: absolute;
+    z-index: 1;
+}
+
+.testimoniales .title {
+    font-size: clamp(15px, 6vw, 60px);
+    /*font-size: 4rem;*/
+    color: white;
+    z-index: 4;
+}
+
+.testimoniales .main-test {
+    width: 85%;
+   display: flex;
+   flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    z-index: 4;
+}
+
+.testimoniales .main-test .container-slider {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.testimoniales .main-test .container-slider .customers-slider {
+  width: 100%;
+}
+.testimoniales .main-test .container-slider .customers-slider .splide{
+  width: 100%;
+}
+.testimoniales .main-test .container-slider .customers-slider .splide .splide_track{
+  width: 100%;
+}
+.testimoniales .main-test .container-slider .customers-slider .splide .splide_list{
+  width: 100%;
+}
+.testimoniales .main-test .container-slider .customers-slider .splide .splide_list .splide__slide{
+  width: 100%;
+}
+.testimoniales .main-test .container-slider .customers-slider .splide__slide {
+    min-height:400px;
+    width: 50%;
+    /* ajusta según tu diseño */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1.3rem;
+}
+.testimoniales .main-test .container-slider .customers-slider .splide__slide a {
+    fill: white;
+    
+
+}
+.testimoniales .main-test .container-slider .customers-slider .splide__slide a .Layer_v {
+    fill: white;
+    width: 50px;
+    height: 50px;
+}
+
+.testimoniales .main-test .container-slider .customers-slider .splide__slide h2 {
+    color: white;
+}
+
+.testimoniales .main-test .container-slider h2 {
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.testimoniales .main-test .container-slider p{
+    color: white;
+    font-size: clamp(20px, 4vw, 30px);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.testimoniales .main-test .container-slider h3{
+    color: white;
+    font-size: .9rem;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*-----*/
+.testimoniales .main-test .test-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testimoniales .main-test .test-icon .icon{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    color: white;
+    gap: 2rem;
+    background: rgba(0, 0, 0, 0.116);
+    margin-bottom: .2rem;
+}
+.testimoniales a #Layer_test{
+    width: 70px;
+    height: 70px;
+    fill: white;
+}
+.testimoniales .main-test .test-icon .icon figure h2{
+    font-size: 2.7rem;
+    font-weight: 400;
+}
+.testimoniales .main-test .test-icon .icon figure p{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+
+
+
+/*-----     SERVICIO-SECTION*/
+@media(max-width: 432px){
+    .servicio .container-servicio .box {
+    padding: 2rem;
+}
+.service .container-service {
+    width: 100%;
+
+}
+}
+
+
+
+/*-----------------*/
+@media(max-width:895px){
+    .testimoniales .main-test .container-slider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+    .testimoniales .main-test {
+    width: 97%;
+   display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    z-index: 4;
+    padding: 1rem;
+}
+}
+@media(max-width:700px){
+    .testimoniales .main-test .container-slider .customers-slider .splide__slide {
+    min-height:270px;
+    width: 100%;
+}
+}

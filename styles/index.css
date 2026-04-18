@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*--------  INDEX   -----*/
+:root{
+    --celeste-white: #fff;
+    --celeste-c1: #C8CDD5;
+    --celeste-c2: #8BA0B4;
+    --celeste-c3: #2D5782;
+    --celeste-c4:#2A547E;
+    --celeste-black:#13273a;
+}
+
+
+html{
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+.home{
+    width: 100%;
+    height: 115vh;
+    position: relative;
+    z-index: 2;
+}
+.home::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 10, 0.452);
+    z-index: 3;
+}
+.home .splide{
+    width: 100%;
+    height: 115vh;
+    z-index: 2;
+}
+.home .splide .splide_track{
+    width: 100%;
+    height: 100%;
+}
+.home .splide__slide img {
+  width: 100%;
+  height: 115vh;
+  object-fit: cover;
+}
+.home .splide__slide.is-active img {
+  animation: zoomInOut 9s infinite
+}
+@keyframes zoomInOut {
+  from { transform: scale(1); }
+  to   { transform: scale(1.3); } /* se queda en 1.2 */
+
+}
+/*---------*/
+.home .title-index{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 1rem;
+    z-index: 10;
+}
+.home .title-index h2{
+    font-family: "Saira", sans-serif;
+    font-size: 1.5rem;
+    padding-left: .5rem;
+    border-left: 3px solid var(--celeste-c4);
+    color: white;
+}
+.home .title-index p{
+    width: 70%;
+    text-align: center;
+    font-size: clamp(15px, 6vw, 50rem);
+    /*font-size: 6rem;*/
+    font-weight: 600;
+    color: white;
+}
+.home .title-index a{
+    color: white;
+    border: 1px solid var(--celeste-c4);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    transition: all 500ms ease;
+    z-index: 30;
+}
+.home .title-index a:hover{
+    background: var(--celeste-c4);
+}
+.home .title-index .absolute-title{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    left: -4rem;
+    z-index: 4;
+}
+.home .absolute-title .title-vertical{
+    rotate: -90deg;
+    font-weight: 200;
+    font-size: clamp(10px, 1.7vw, 2rem);
+    /*font-size: 1.3rem;*/
+}
+/*-----*/
+.title-bloq{
+    position: relative;
+    z-index: 10;
+    color: white;
+    font-size: clamp(25px, 3vw, 3rem);
+    /*font-size: 3rem;*/
+    bottom: 6rem;
+    left: 6rem;
+}
+.home .index-url{
+    position: absolute;
+    background: white;
+    z-index: 10;
+    bottom: 0;
+    right: 3rem;
+    list-style: none;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.home .index-url a{
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.home .index-url .black{
+    color: black;
+}
+.home .index-url .red{
+    color: var(--celeste-c4);
+}
+.home .index-url .grey{
+    color: grey;
+}
+
+.home .floating-icon{
+    position: fixed;
+    z-index: 10;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 100;
+}
+.home .floating-icon a{
+    text-decoration: none;
+    color: white;
+    font-size: 4.5rem;
+    background: green;
+    padding: .2rem;
+    border-radius: 50%;
+    z-index: 100;
+    animation: breathe 2s ease-in-out infinite;
+}
+/*Estilos con animation contorno respirando*/
+@keyframes breathe {
+  0% {
+    box-shadow: 0 0 0 0 rgba(49, 233, 32, 0.842);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+/*-----------------------*/
+.formulario-index{
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/bloq5.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: relative;
+}
+.formulario-index::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.397);
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+}
+.formulario-index .index-formulario{
+    width: 80%;
+}
+.formulario-index{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    padding: 3rem .5rem;
+} 
+.formulario-index .index-form{
+    width: 60%;
+    z-index: 3;
+}
+.formulario-index .index-form form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.formulario-index .index-form form .grid-label{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.formulario-index .index-form form main figure{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 1.5rem;
+}
+.formulario-index .index-form form label,
+.formulario-index .index-form form main figure label{
+    font-size: 1rem;
+    font-weight: 900;
+    padding-left: 1rem;
+    padding-bottom: .7rem;
+    color: white;
+}
+.formulario-index .index-form form label span,
+.formulario-index .index-form form main figure label span{
+    color: var(--celeste-c4);
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.formulario-index .index-form form input,
+.formulario-index .index-form form .grid-label input{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+}
+.formulario-index .index-form form input,
+.formulario-index .index-form form .grid-label input,
+.formulario-index .index-form form textarea{
+    border: none;
+    border: 1px solid rgb(201, 201, 201);
+    outline: none;
+    border-radius: 4px;
+}
+.formulario-index .index-form form input:focus,
+.formulario-index .index-form form .grid-label input:focus,
+.formulario-index .index-form form textarea:focus{
+    border: 1px solid var(--celeste-c4);
+}
+.formulario-index .index-form form textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    resize: none;
+}
+.formulario-index .index-form form .label-textarea{
+    padding-top: 1.5rem;
+}
+.formulario-index .index-form form .button-form{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: none;
+    background: var(--celeste-c4);
+    color: white;
+    margin-top: 2rem;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+.formulario-index .index-form form .button-form:hover{
+    background: var(--celeste-black);
+}
+
+/*---------------------------*/
+.contacto-contacto{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--celeste-c4);
+    padding: 2rem .5rem;
+}
+.contacto-contacto .title-1{
+    width: 85%;
+    height: 30vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 2rem .5rem;
+}
+.contacto-contacto .title-1 h2{
+    color: white;
+    font-size: clamp(35px, 4vw, 40rem);
+    /*font-size: 3rem;*/
+}
+/*------------------------------------------*/
+
+
+
+
+@media(max-width: 963px){
+    /*--------  INDEX   -----*/
+.home,
+.home .splide,
+.home .splide__slide img
+{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    z-index: 2;
+}
+.home .title-index .absolute-title{
+    left: -3rem;
+}
+}
+@media(max-width: 600px){
+    /*--------  INDEX   -----*/
+.home,
+.home .splide,
+.home .splide__slide img
+{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    z-index: 2;
+}
+}
+
+/*-------------------------*/
+@media(max-width: 700px){
+    .formulario-index .index-form{
+    width: 100%;
+}
+}
+@media(max-width: 650px){
+    .formulario-index .index-form form .grid-label{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+}
+}
+
+
+/*-----------EFECTOS------------*/
+/*-----------EFECTOS------------*/
+.effect{
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all .7s ease-out;
+}
+
+.effect.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+/*---*/
+
+/* Animaciones iniciales según dirección */
+.desde-izquierda {
+  transform: translateX(-50px);
+}
+.desde-derecha {
+  transform: translateX(50px);
+}
+.desde-arriba {
+  transform: translateY(-50px);
+}
+.desde-abajo {
+  transform: translateY(50px);
+}
+
+/* Estado visible */
+.visible {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}

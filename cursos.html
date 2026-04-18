@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raquel Guzman"> 
+    <meta name="description" content="Desarrollo web Html, Css y JavaScript">
+    <meta name="keywords" content="código, HTML, y más">   <meta name="Url" content="">
+    <title>CSR | Otros</title>
+    <link rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/CSR-favi-icon.png">
+    <!----  Styles  ---->
+    <link rel="stylesheet" href="./styles/cursos.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/servicio.css">
+    <!-- libreria icono font asewore-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- o enlace a la CDN a libreria splide -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <!----  libreria CDN nav-menu   ------>
+    <link rel="stylesheet" href="./hamburgers-master/dist/hamburgers.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!----  libreria progressbars.js ---->
+    
+
+
+</head>
+
+<body>
+    <!--section header    -->
+    <header class="header" id="mainHeader">
+        <a class="logo" href="index.html"><img id="logo" src="./img/HEADER-lol.png"  alt="logo creativo"></a>
+        <nav>
+            <a href="somos.html">Somos</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="cursos.html">Otros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="bolq.html">Blog</a>
+        </nav>
+        <ul class="header-icon">
+            <li><a class="icon-phone" href="tel:+50237199449">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1 phone" data-name="Layer 1" viewBox="0 0 24 24" width="512" height="512"><path d="m23.5,11c-.276,0-.5-.224-.5-.5,0-5.238-4.262-9.5-9.5-9.5-.276,0-.5-.224-.5-.5s.224-.5.5-.5c5.79,0,10.5,4.71,10.5,10.5,0,.276-.224.5-.5.5Zm-3.5-.5c0-3.584-2.916-6.5-6.5-6.5-.276,0-.5.224-.5.5s.224.5.5.5c3.033,0,5.5,2.467,5.5,5.5,0,.276.224.5.5.5s.5-.224.5-.5Zm2.234,11.771l.978-1.125c.508-.508.788-1.184.788-1.902s-.28-1.395-.837-1.945l-2.446-1.873c-1.048-1.048-2.753-1.049-3.803-.003l-1.532,1.494c-3.68-1.499-6.678-4.5-8.294-8.303l1.488-1.525c1.049-1.049,1.049-2.756.043-3.756l-1.959-2.543c-1.017-1.017-2.813-.993-3.78-.023l-1.174,1.024C.605,2.886,0,4.373,0,5.976c0,7.749,10.275,18.024,18.024,18.024,1.603,0,3.089-.605,4.21-1.729ZM5.909,1.446l1.959,2.543c.659.659.659,1.732-.004,2.396l-1.722,1.766c-.138.142-.18.352-.106.536,1.729,4.305,5.113,7.688,9.286,9.28.182.07.388.027.527-.108l1.766-1.722s.003-.003.004-.005c.639-.64,1.704-.681,2.44.043l2.446,1.873c.659.659.659,1.731-.023,2.416l-.979,1.125c-.908.91-2.144,1.411-3.479,1.411C10.864,23,1,13.136,1,5.976c0-1.335.501-2.571,1.387-3.456l1.175-1.025c.336-.336.779-.5,1.215-.5.419,0,.831.152,1.133.452Z"/></svg>
+            </a></li>
+            <li>
+                <h2>Contáctanos</h2>
+                <h3>+502 3719-9449</h3>
+            </li>
+        </ul>
+
+    </header>
+
+    <!---------  HEADER    ----->
+    <header class="headerNAV" id="">
+        <div class="header-networks">
+            <div class="header-info">
+                <a href="mailto:servicioscsr@gmail.com?subject=Solicitud%20de%20información" target="_blank"><i class="fa-regular fa-envelope"></i>servicioscsr@gmail.com</a>
+                <a href="tel:+50237199449" target="_blank"><i class="fa-solid fa-phone"></i>+502 3719-9449</a>
+            </div>
+            <div class="header-icon">
+                <a href="https://www.facebook.com/ConsultoresCSR" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://maps.app.goo.gl/T3vzPuNKXb6qo6YB9" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <!-------   header-menu  ------->
+        <div class="header-menu navigation blur">
+            <nav class="nav-panel panel menu_list nav-links">
+                <div class="nav-logores">
+                    <figure class="logoNAV" href="index.html">
+                        <img id="logo" src="./img/logo-header-CSR.png" alt="logo creativo">
+                    </figure>
+                </div>
+                <a class="menu_link" href="somos.html">Somos</a>
+                <a class="menu_link" href="servicios.html">Servicios</a>
+                <a class="menu_link" href="cursos.html">Cursos</a>
+                <a class="menu_link" href="contacto.html">Contacto</a>
+                <a class="menu_link" href="bolq.html">Blog</a>
+            </nav>
+            <ul class="header-icon">
+                    <a class="logo" href="index.html"><img id="logo" src="./img/logo-header-CSR.png" alt="logo creativo"></a>
+                    <li><a class="icon-phoneNAV" href="tel:+50237199449" target="_blank"><i class="fa-solid fa-phone-volume"></i></a></li>
+                    <li class="li-icon-phoneNAV">
+                        <h2>Contáctanos</h2>
+                        <h3>+502 3719-9449</h3>
+                    </li>
+            </ul>
+
+
+            <!---- ICON-HAMBURGER    ---->
+        <button id="menu-btn" class="hamburger hamburger--squeeze" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        </div>
+       
+
+    </header>
+
+    <!-- section banner-index   -->
+    <section class="index">
+        <h2 class="title-bloq">Cursos</h2>
+        <!--elementos index -->
+        <ul class="index-url">
+            <li><a class="black" href="index.html">Home</a></li>
+            <li><a class="grey" href="">/</a></li>
+            <li><a class="red" href="">Cursos</a></li>
+        </ul>
+        <div class="floating-icon">
+            <a href="https://wa.me/50237199449?text=Hola,%20quiero%20más%20información%20sobre%20su%20servicio" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <!--carousel-->
+        <section id="image-carousel" class="splide" id="splide" aria-label="Beautiful Images">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="./img/slider-index1.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/slider-index2.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/slider-index3.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="./img/slider-index1.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/slider-index2.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/slider-index3.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+
+
+        </section>
+    </section>
+
+
+     <!----- CURSOS ------>
+    <section class="cursos">
+        <h2>Otros servicios</h2>
+        <main class="curso-container">
+                <article class="list effect desde-izquierda">
+                    <figure>
+                        <i class="fa-regular fa-circle-check"></i><p>Outsourcing de cuentas por cobrar</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Outsourcing de cuentas por pagar</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Inventarios auditoria externa</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Asesoria y formacion para empresas extranjeras</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Contabilidades atrasadas</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Omisos</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Inventarios</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Auditorias</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Asesoria Financiera</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Inscripcion ante la SAT</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Patentes de Comercio</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Inscripcion del Igss</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Administracion de planillas</p>
+                    </figure>
+                </article>
+                <article class="list effect desde-derecha">
+                    <figure>
+                        <i class="fa-regular fa-circle-check"></i><p>Apertura de agencia virtual</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Actualizacion de RTU</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Apertura de nuevo Nit</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>administracion de negocio</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Reclutamiento de personal contable</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Analisis de datos financieros</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Inscripcion de registro mercantil</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Constituciones de sociedades</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Clausura de empresas</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Facturas electronicas</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Asesoria empresarial</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Integracion de servicios deacuerdo a la necesidad</p>
+                    </figure>
+                     <figure>
+                         <i class="fa-regular fa-circle-check"></i><p>Giro de las empresas PYMES, emprendedores u otros</p>
+                    </figure>
+                </article>
+                <h2 class="titlecheck">Somos un equipo de profesionales, dinámico y proactivo con conocimiento y experiencia.</h2>
+                <button onclick="location.href='contacto.html'" class="button-text">Solicitar una servicio contable</button>
+
+            </main>
+    </section>
+
+
+<!------    SECTION-TESTIMONIALES   ----->
+    <section class="testimoniales">
+        <h2 class="title">Testimoniales</h2>
+        <main class="main-test">
+            <article class="container-slider effect desde-izquierda">
+                <article class="customers-slider">
+                    <section id="image-carousel" class="splide splide1" id="splide" aria-label="Beautiful Images">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="Layer_v" id="Layer_1"
+                                            data-name="Layer 1" viewBox="0 0 24 24">
+                                            <path
+                                                d="M10.457,4.373c-.068-.316-.287-.578-.584-.704-.139-.058-3.444-1.419-7.757,.056-.229,.079-.422,.238-.542,.449-.134,.235-.572,1.225-.572,4.095,0,2.728,.404,3.664,.645,3.98,.07,.091,.154,.17,.251,.232,.202,.13,1.36,.78,4.391,.78,.7,0,1.297-.032,1.805-.084-.027,.489-.068,.982-.122,1.474-.191,1.75-1.495,3.114-3.172,3.319-.822,.101-1.407,.849-1.307,1.672,.093,.76,.74,1.317,1.487,1.317,.061,0,.122-.004,.184-.011,3.066-.375,5.447-2.831,5.79-5.972,.121-1.108,.182-2.22,.182-3.304,0-.031-.001-.061-.003-.091-.007-4.084-.649-7.082-.677-7.208Z" />
+                                            <path
+                                                d="M22.995,11.579c-.007-4.082-.649-7.079-.677-7.206-.068-.316-.287-.578-.584-.704-.139-.058-3.444-1.419-7.757,.056-.229,.079-.422,.238-.542,.449-.134,.235-.572,1.225-.572,4.095,0,2.728,.404,3.664,.645,3.98,.069,.091,.154,.17,.251,.232,.202,.13,1.36,.78,4.391,.78,.7,0,1.297-.032,1.805-.084-.028,.49-.068,.982-.122,1.474-.191,1.75-1.495,3.114-3.172,3.319-.822,.101-1.407,.849-1.307,1.671,.093,.761,.74,1.318,1.487,1.318,.061,0,.122-.004,.184-.011,3.066-.375,5.447-2.831,5.79-5.972,.121-1.106,.183-2.218,.183-3.304,0-.032-.001-.063-.003-.094Z" />
+                                        </svg>
+                                    </a>
+                                    <p>Gracias por el compromiso y la responsabilidad de entregar el servicio contable
+                                        son muy puntuales y amables</p>
+                                    <h2>Jose Miguel Porras</h2>
+                                    <h3>Gerente de area comercial</h3>
+                                </li>
+                                <li class="splide__slide">
+                                    <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="Layer_v" id="Layer_1"
+                                            data-name="Layer 1" viewBox="0 0 24 24">
+                                            <path
+                                                d="M10.457,4.373c-.068-.316-.287-.578-.584-.704-.139-.058-3.444-1.419-7.757,.056-.229,.079-.422,.238-.542,.449-.134,.235-.572,1.225-.572,4.095,0,2.728,.404,3.664,.645,3.98,.07,.091,.154,.17,.251,.232,.202,.13,1.36,.78,4.391,.78,.7,0,1.297-.032,1.805-.084-.027,.489-.068,.982-.122,1.474-.191,1.75-1.495,3.114-3.172,3.319-.822,.101-1.407,.849-1.307,1.672,.093,.76,.74,1.317,1.487,1.317,.061,0,.122-.004,.184-.011,3.066-.375,5.447-2.831,5.79-5.972,.121-1.108,.182-2.22,.182-3.304,0-.031-.001-.061-.003-.091-.007-4.084-.649-7.082-.677-7.208Z" />
+                                            <path
+                                                d="M22.995,11.579c-.007-4.082-.649-7.079-.677-7.206-.068-.316-.287-.578-.584-.704-.139-.058-3.444-1.419-7.757,.056-.229,.079-.422,.238-.542,.449-.134,.235-.572,1.225-.572,4.095,0,2.728,.404,3.664,.645,3.98,.069,.091,.154,.17,.251,.232,.202,.13,1.36,.78,4.391,.78,.7,0,1.297-.032,1.805-.084-.028,.49-.068,.982-.122,1.474-.191,1.75-1.495,3.114-3.172,3.319-.822,.101-1.407,.849-1.307,1.671,.093,.761,.74,1.318,1.487,1.318,.061,0,.122-.004,.184-.011,3.066-.375,5.447-2.831,5.79-5.972,.121-1.106,.183-2.218,.183-3.304,0-.032-.001-.063-.003-.094Z" />
+                                        </svg>
+                                    </a>
+                                    <p>Saludos y gracias por el servicio de Outsourcing muy acertado en el personal</p>
+                                    <h2>Miguel Orlando Carías Chávez</h2>
+                                    <h3>Gerente de analista de datos</h3>
+                                </li>
+                                <li class="splide__slide">
+                                   <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="Layer_v" id="Layer_1"
+                                            data-name="Layer 1" viewBox="0 0 24 24">
+                                            <path
+                                                d="M10.457,4.373c-.068-.316-.287-.578-.584-.704-.139-.058-3.444-1.419-7.757,.056-.229,.079-.422,.238-.542,.449-.134,.235-.572,1.225-.572,4.095,0,2.728,.404,3.664,.645,3.98,.07,.091,.154,.17,.251,.232,.202,.13,1.36,.78,4.391,.78,.7,0,1.297-.032,1.805-.084-.027,.489-.068,.982-.122,1.474-.191,1.75-1.495,3.114-3.172,3.319-.822,.101-1.407,.849-1.307,1.672,.093,.76,.74,1.317,1.487,1.317,.061,0,.122-.004,.184-.011,3.066-.375,5.447-2.831,5.79-5.972,.121-1.108,.182-2.22,.182-3.304,0-.031-.001-.061-.003-.091-.007-4.084-.649-7.082-.677-7.208Z" />
+                                            <path
+                                                d="M22.995,11.579c-.007-4.082-.649-7.079-.677-7.206-.068-.316-.287-.578-.584-.704-.139-.058-3.444-1.419-7.757,.056-.229,.079-.422,.238-.542,.449-.134,.235-.572,1.225-.572,4.095,0,2.728,.404,3.664,.645,3.98,.069,.091,.154,.17,.251,.232,.202,.13,1.36,.78,4.391,.78,.7,0,1.297-.032,1.805-.084-.028,.49-.068,.982-.122,1.474-.191,1.75-1.495,3.114-3.172,3.319-.822,.101-1.407,.849-1.307,1.671,.093,.761,.74,1.318,1.487,1.318,.061,0,.122-.004,.184-.011,3.066-.375,5.447-2.831,5.79-5.972,.121-1.106,.183-2.218,.183-3.304,0-.032-.001-.063-.003-.094Z" />
+                                        </svg>
+                                    </a>
+                                    <p>Quede agradecido por la resolicion de un problema contable, si son expertos</p>
+                                    <h2>Oscar Alfonso Garcia Flores</h2>
+                                    <h3>Gerente de ventas</h3>
+                                </li>
+                                <li class="splide__slide">
+                                   <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="Layer_v" id="Layer_1"
+                                            data-name="Layer 1" viewBox="0 0 24 24">
+                                            <path
+                                                d="M10.457,4.373c-.068-.316-.287-.578-.584-.704-.139-.058-3.444-1.419-7.757,.056-.229,.079-.422,.238-.542,.449-.134,.235-.572,1.225-.572,4.095,0,2.728,.404,3.664,.645,3.98,.07,.091,.154,.17,.251,.232,.202,.13,1.36,.78,4.391,.78,.7,0,1.297-.032,1.805-.084-.027,.489-.068,.982-.122,1.474-.191,1.75-1.495,3.114-3.172,3.319-.822,.101-1.407,.849-1.307,1.672,.093,.76,.74,1.317,1.487,1.317,.061,0,.122-.004,.184-.011,3.066-.375,5.447-2.831,5.79-5.972,.121-1.108,.182-2.22,.182-3.304,0-.031-.001-.061-.003-.091-.007-4.084-.649-7.082-.677-7.208Z" />
+                                            <path
+                                                d="M22.995,11.579c-.007-4.082-.649-7.079-.677-7.206-.068-.316-.287-.578-.584-.704-.139-.058-3.444-1.419-7.757,.056-.229,.079-.422,.238-.542,.449-.134,.235-.572,1.225-.572,4.095,0,2.728,.404,3.664,.645,3.98,.069,.091,.154,.17,.251,.232,.202,.13,1.36,.78,4.391,.78,.7,0,1.297-.032,1.805-.084-.028,.49-.068,.982-.122,1.474-.191,1.75-1.495,3.114-3.172,3.319-.822,.101-1.407,.849-1.307,1.671,.093,.761,.74,1.318,1.487,1.318,.061,0,.122-.004,.184-.011,3.066-.375,5.447-2.831,5.79-5.972,.121-1.106,.183-2.218,.183-3.304,0-.032-.001-.063-.003-.094Z" />
+                                        </svg>
+                                    </a>
+                                    <p>Agradezco mucho el conocimiento proporcionado y la paciencia para mostrarnos las herramientas que nos serviran para mejorar las gestiones</p>
+                                    <h2>Jose Miguel Porras Amado</h2>
+                                    <h3>Marketing y ventas</h3>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+    
+                </article>
+            </article>
+            <!----- ----->
+            <article class="test-icon effect desde-derecha">
+                <div class="icon">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_test" data-name="Layer 1" viewBox="0 0 24 24"
+                            width="512" height="512">
+                            <path
+                                d="M15.067,15.998c6.589-.024,8.933-3.51,8.933-6.498,0-1.676-1.185-3.077-2.76-3.418,.311-.882,.546-1.731,.702-2.489,.18-.876-.044-1.778-.613-2.476-.579-.71-1.437-1.117-2.352-1.117H5.023c-.916,0-1.773,.407-2.352,1.117-.569,.697-.793,1.6-.613,2.476,.156,.759,.391,1.607,.702,2.489-1.575,.341-2.76,1.742-2.76,3.418,0,2.988,2.344,6.473,8.933,6.498,.03,.211,.067,.421,.067,.639v3.363c0,1.826-1.536,1.992-2,2h-2v2h14v-2h-1.992c-.472-.008-2.008-.174-2.008-2v-3.363c0-.218,.037-.428,.067-.639Zm5.433-7.998c.827,0,1.5,.673,1.5,1.5,0,2.048-1.631,4.225-6.124,4.475,.18-.233,.382-.445,.609-.626,1.718-1.373,3.024-3.351,3.959-5.349h.057ZM2,9.5c0-.827,.673-1.5,1.5-1.5h.057c.935,1.998,2.24,3.976,3.958,5.349,.227,.181,.43,.393,.609,.626-4.493-.25-6.124-2.427-6.124-4.475Zm11,7.137v3.363c0,.806,.191,1.459,.487,2h-2.973c.295-.541,.487-1.194,.487-2v-3.363c0-1.946-.814-3.714-2.236-4.851-2.463-1.969-4.159-5.735-4.746-8.596-.08-.39,.094-.674,.203-.81,.198-.242,.49-.381,.803-.381h13.953c.312,0,.604,.139,.802,.381,.11,.136,.284,.421,.204,.81-.587,2.859-2.282,6.626-4.746,8.596-1.421,1.136-2.236,2.903-2.236,4.851Zm-.476-12.637l.652,2.005h2.109l.3,.918-1.706,1.24,.652,2.006-.781,.567-1.705-1.236-1.71,1.237-.781-.567,.652-2.006-1.706-1.24,.3-.918h2.107l.652-2,.965-.006Z" />
+                        </svg>
+                    </a>
+                    <figure>
+                        <h2>1,608</h2>
+                        <p>Informes Completados</p>
+                    </figure>
+                </div>
+                <div class="icon">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_test" data-name="Layer 1" viewBox="0 0 24 24">
+                            <path
+                                d="m15,8h-6v-1.5c0-.828.672-1.5,1.5-1.5h3c.828,0,1.5.672,1.5,1.5v1.5Zm-3-4c1.105,0,2-.895,2-2s-.895-2-2-2-2,.895-2,2,.895,2,2,2Zm10.5,7h-3c-.828,0-1.5.672-1.5,1.5v1.5h6v-1.5c0-.828-.672-1.5-1.5-1.5Zm-1.5-1c1.105,0,2-.895,2-2s-.895-2-2-2-2,.895-2,2,.895,2,2,2Zm-15,.5c0-.828-.672-1.5-1.5-1.5H1.5c-.828,0-1.5.672-1.5,1.5v1.5h6v-1.5Zm-3-2.5c1.105,0,2-.895,2-2s-.895-2-2-2-2,.895-2,2,.895,2,2,2Zm21,11.5v4.5H0v-7.5c0-1.378,1.122-2.5,2.5-2.5h4c.171,0,.338.017.5.05v-1.55c0-1.378,1.122-2.5,2.5-2.5h5c1.379,0,2.5,1.122,2.5,2.5v4.55c.162-.033.329-.05.5-.05h4c1.379,0,2.5,1.122,2.5,2.5Zm-15,2.5h6v-9.5c0-.276-.225-.5-.5-.5h-5c-.276,0-.5.224-.5.5v9.5Zm-7,0h5v-5.5c0-.276-.224-.5-.5-.5H2.5c-.276,0-.5.224-.5.5v5.5Zm20-2.5c0-.276-.225-.5-.5-.5h-4c-.275,0-.5.224-.5.5v2.5h5v-2.5Z" />
+                        </svg>
+                    </a>
+                    <figure>
+                        <h2>1,204</h2>
+                        <p>Servicios Completados</p>
+                    </figure>
+                </div>
+            </article>
+        </main>
+    </section>
+
+    <!-- script libreria splide SLIDER --->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('.splide1', {
+                type: 'loop',       // carrusel infinito
+                height: '9rem',
+                autoplay: true,         // reproducción automática
+                interval: 3000,         // tiempo entre slides (ms)
+                arrows: false,        // quita flechas de navegación
+                pagination: false,        // quita los botones de paginación
+                drag: true,       // habilita arrastrar con mouse/touch
+                spedd: 900,
+            }).mount();
+        
+        });
+    </script>
+
+
+    
+    
+    
+
+    <!-- section-sliders     ---->
+    <section class="customers">
+        <h2 class="effect desde-abajo">Contamos con una amplia cartera de clientes:</h2>
+        <article class="customers-slider">
+             <section id="image-carousel" class="splide splide2" id="splide" aria-label="Beautiful Images">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="img/logo1-bi-banco.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo2-cultura-digital.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo3-guatemala-antigua.webp" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo4-aceite-ideal.webp" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo5-samboro.jpg" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo6-altamira.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo7-byb.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo8-ECOMA-LOGO.webp" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo9-made-in-guatemala.webp" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo10-inmobilidaria.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo11-isopan.png" alt="">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/logo12-cbc.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        </article>
+    </section>
+
+    <!-----     footer  ------>
+    <footer class="footer">
+        <article class="contaier-footer">
+            <div class="footer-header">
+                <div class="img">
+                    <a href="index.html"><img src="img/HEADER-lol.png" alt=""></a>
+                </div>
+                <h2>¿Deseas iniciar tu empresa, nosotros te apoyamos con lo administrativo <span>+ 502 3719-9449</span></h2>
+            </div>
+            <div class="footer-nav">
+                <article class="footer-card"><a href="">&copy;2025 Copyrights by diseño web Guatemala</a></article>
+                <article class="footer-networks">
+                    <a class="networks" href="https://www.facebook.com/ConsultoresCSR" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="networks" href="https://maps.app.goo.gl/T3vzPuNKXb6qo6YB9" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+                    <a class="networks" href="mailto:servicioscsr@gmail.com?subject=Solicitud%20de%20información" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                    <a class="networks" href="https://wa.me/50237199449?text=Hola,%20quiero%20más%20información%20sobre%20su%20servicio" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </article>
+                <article class="footer-card-im">
+                    <a href="index.html"><img src="img/HEADER-lol.png" alt=""></a>
+                </article>
+            </div>
+        </article>
+    </footer>
+
+
+
+
+
+
+    <div class="nav-overlay"></div>
+
+    <script src="header.js"></script>
+    <script src="modules.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/progressbar.js"></script>
+    <script src="circulo.js"></script>
+    <script src="splide-sliders.js"></script>
+    <script src="efectos.js"></script>
+
+</body>
+
+</html>

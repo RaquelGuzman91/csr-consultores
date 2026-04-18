@@ -1,0 +1,114 @@
+:root{
+    --celeste-white: #fff;
+    --celeste-c1: #C8CDD5;
+    --celeste-c2: #8BA0B4;
+    --celeste-c3: #2D5782;
+    --celeste-c4:#2A547E;
+    --celeste-black:#13273a;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.formulario{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    padding: 3rem .5rem 1rem .5rem;
+} 
+.formulario .container-formulario{
+    width: 90%;
+}
+.formulario .container-formulario form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.formulario .container-formulario form .grid-label{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.formulario .container-formulario form main figure{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 1.5rem;
+}
+.formulario .container-formulario form label,
+.formulario .container-formulario form main figure label{
+    font-size: 1rem;
+    font-weight: 900;
+    padding-left: 1rem;
+    padding-bottom: .7rem;
+}
+.formulario .container-formulario form label span,
+.formulario .container-formulario form main figure label span{
+    color: var(--celeste-c4);
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.formulario .container-formulario form input,
+.formulario .container-formulario form .grid-label input{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+}
+.formulario .container-formulario form input,
+.formulario .container-formulario form .grid-label input,
+.formulario .container-formulario form textarea{
+    border: none;
+    border: 1px solid rgb(201, 201, 201);
+    outline: none;
+     border-radius: 4px;
+}
+.formulario .container-formulario form input:focus,
+.formulario .container-formulario form .grid-label input:focus,
+.formulario .container-formulario form textarea:focus{
+    border: 1px solid var(--celeste-c4);
+}
+.formulario .container-formulario form textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    resize: none;
+}
+.formulario .container-formulario form .label-textarea{
+    padding-top: 1.5rem;
+}
+.formulario .container-formulario form .button-form{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: none;
+    background: var(--celeste-c4);
+    color: white;
+    margin-top: 2rem;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+.formulario .container-formulario form .button-form:hover{
+    background: var(--celeste-black);
+}
+
+
+/*-------------------------*/
+@media(max-width: 700px){
+    .formulario .container-formulario{
+    width: 100%;
+}
+}
+@media(max-width: 650px){
+    .formulario .container-formulario form .grid-label{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+}
+}
