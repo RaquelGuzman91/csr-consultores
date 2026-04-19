@@ -49,7 +49,6 @@ body{
     font-size: 1.6rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 .header nav a::after{
     content: '';
     width: 5px;
@@ -219,6 +218,7 @@ body{
  .hamburger{
     display: none;
     z-index: 400;
+    background: white;
 }
 
 
@@ -240,7 +240,7 @@ body{
     
         .headerNAV .header-menu .hamburger {
             display: block;
-            z-index: 400;
+            z-index: 500;
             background: white;
         }
     
@@ -265,8 +265,8 @@ body{
             position: absolute;
             display: flex;
             flex-direction: column;
-            align-items: start;
-            justify-content: start;
+            align-items: left;
+            justify-content: space-evenly;
             position: fixed;
             z-index: 500;
             top: 0;
@@ -280,9 +280,11 @@ body{
         }
         .headerNAV nav .menu_link {
             width: 100%;
-            border-bottom: 1.9px solid rgba(211, 205, 195, 0.658);
+            border-bottom: 1.9px solid rgba(226, 221, 211, 0.658);
             padding-bottom: 1.2rem;
             z-index: 500;
+            font-size: 1.5rem;
+            font-weight: 100;
         }
         .headerNAV nav .nav-logores {
             width: 100%;

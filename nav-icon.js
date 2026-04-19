@@ -22,20 +22,20 @@ export default function menuHamburger(btnHamburger, panel, menuLink){
             overlay.classList.remove("is-active"); // oculta overlay
             btn.classList.toggle('static');     // alterna entre normal y fixed
             btn.classList.remove('fixed');
-            //evita el 
+            //evita el envio a la pagina destino y espera el efecto
             e.preventDefault();
             setTimeout(() => {
                 window.location.href = e.target.href;
             }, 400);
         }
         if(e.target.matches(".nav-overlay")){ 
-            // si clicas fuera del menú, también se cierra
+            // clic fuera del menú, también se cierra
             document.querySelector(panel).classList.remove("is-active");
             document.querySelector(btnHamburger).classList.remove("is-active");
             overlay.classList.remove("is-active");
             btn.classList.remove('fixed');
 
-            /*tiempo*/
+            
             
         }
 
