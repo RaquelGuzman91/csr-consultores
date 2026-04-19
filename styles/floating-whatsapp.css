@@ -10,7 +10,7 @@
     z-index: 10;
     bottom: 2rem;
     right: 2rem;
-    z-index: 100;
+    z-index: 200;
 }
 .index .floating-icon a,
 .home .floating-icon a{
@@ -48,6 +48,6 @@
 }
 .home .floating-icon a,
 .index .floating-icon a{
-  font-size: 3.7rem;
+  font-size: 3.9rem;
 }
 }

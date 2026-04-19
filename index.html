@@ -82,7 +82,7 @@
                 </div>
                 <a class="menu_link" href="somos.html">Somos</a>
                 <a class="menu_link" href="servicios.html">Servicios</a>
-                <a class="menu_link" href="cursos.html">Cursos</a>
+                <a class="menu_link" href="cursos.html">Otros</a>
                 <a class="menu_link" href="contacto.html">Contacto</a>
                 <a class="menu_link" href="bolq.html">Blog</a>
             </nav>
@@ -609,27 +609,27 @@
         <article class="index-form">
             <form action="">
             <label for="">Nombre<span>*</span></label>
-            <input type="text" placeholder="Nombre y Apellido">
+            <input type="text"  placeholder="Nombre y Apellido">
             <main class="grid-label">
                 <figure>
                     <label for="">Telefono <span>*</span></label>
-                    <input type="text" placeholder="Telefono movil">
+                    <input type="text" name="Telefono" inputmode="tel" maxlength="8" pattern="\d{8}" placeholder="Telefono movil" required>
                 </figure>
                 <figure>
                     <label for="">Correo electronico <span>*</span></label>
-                    <input type="text" placeholder="Correo electronico">
+                    <input type="text" name="Correo electronico" inputmode="email" placeholder="Correo electronico" required>
                 </figure>
                 <figure>
                     <label for="">Puesto <span>*</span></label>
-                    <input type="text" placeholder="Puesto que desempeña">
+                    <input type="text" name="Puesto" inputmode="text" placeholder="Puesto que desempeña" required>
                 </figure>
                 <figure>
                     <label for="">Empresa <span>*</span></label>
-                    <input type="text" placeholder="Empresa en que labora">
+                    <input type="text" name="Empresa" inputmode="text" placeholder="Empresa en que labora" required>
                 </figure>
             </main>
             <label class="label-textarea" for="">¿Como podemos ayudarte? <span>*</span></label>
-            <textarea name="" id="" rows="6" placeholder="Describe tu solicitud para que podamos ayudarte de la mejor manera posible"></textarea>
+            <textarea name="Mensaje" id="" rows="6" placeholder="Describe tu solicitud para que podamos ayudarte de la mejor manera posible" required></textarea>
             <button class="button-form" type="submit">Enviar</button>
         </form>
         </article>
