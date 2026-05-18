@@ -110,6 +110,7 @@ body{
     font-size: 1.4rem;
     font-weight: 500;
 }
+
 /*.header .header-icon .icon-phone svg{}*/
 .headerNAV {
     width: 100%;
@@ -153,11 +154,9 @@ body{
     font-family: "Roboto", sans-serif;
     font-weight: 200;
 }
-
 .headerNAV .header-networks .header-info i {
     color: var(--celeste-white);
 }
-
 .headerNAV .header-networks .header-icon a {
     color: white;
 }
@@ -165,7 +164,6 @@ body{
     width: 250px;
     object-fit: cover;
 }
-
 .headerNAV .header-menu {
     width: 100%;
     display: flex;
@@ -237,24 +235,25 @@ body{
             display: block;
             z-index: 500;
         }
-    
         .headerNAV .header-menu .hamburger {
             display: block;
             z-index: 500;
             background: white;
         }
-    
         .hamburger-inner,
         .hamburger-inner::before,
         .hamburger-inner::after {
             background-color: rgb(75, 75, 75) !important;
             height: 3px !important;
+
         }
         /* cuando está activo, lo fijamos */
-    #menu-btn.fixed {
-    position: fixed;
-    right: 1rem;
-    }
+        #menu-btn.fixed {
+        position: fixed;
+        right: 1rem;
+        background: white;
+        z-index: 500;
+        }
 
 
     /*-----  HEADER-PHONE   ---*/
@@ -263,10 +262,10 @@ body{
             height: 100%;
             background: white;
             position: absolute;
-            display: flex;
-            flex-direction: column;
-            align-items: left;
-            justify-content: space-evenly;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: center;
+            align-items: start;
             position: fixed;
             z-index: 500;
             top: 0;
@@ -279,11 +278,11 @@ body{
             transition: .4s ease-in-out;
         }
         .headerNAV nav .menu_link {
+            height: 100%;
             width: 100%;
-            border-bottom: 1.9px solid rgba(226, 221, 211, 0.658);
-            padding-bottom: 1.2rem;
+            border-bottom: 1.5px solid rgba(219, 219, 219, 0.658);
             z-index: 500;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 100;
         }
         .headerNAV nav .nav-logores {

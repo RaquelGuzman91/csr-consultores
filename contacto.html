@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/contacto.css">
     <link rel="stylesheet" href="./styles/floating-whatsapp.css">
-    
+    <link rel="stylesheet" href="./styles/mensaje.css">
+
     <!-- libreria icono font asewore-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- o enlace a la CDN a libreria splide -->
@@ -25,8 +26,8 @@
     <!----  libreria CDN nav-menu   ------>
     <link rel="stylesheet" href="./hamburgers-master/dist/hamburgers.css">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!----  libreria progressbars.js ---->
-    
+    <!----  libreria alerta sweetAlert2 ---->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
 </head>
@@ -149,17 +150,17 @@
     <!------ SECTION-FORM  -------->
     <section class="formulario">
         <article class="container-formulario">
-            <form action="">
+            <form action="" name="contact-form" id="" method="post">
             <label for="">Nombre<span>*</span></label>
-            <input type="text" name="nombre y apellido" inputmode="text" placeholder="Nombre y Apellido" required>
+            <input type="text"  name="nombre" inputmode="text" placeholder="Nombre y Apellido" required>
             <main class="grid-label">
                 <figure>
                     <label for="">Telefono <span>*</span></label>
-                    <input type="tel" name="telefono" inputmode="tel" placeholder="Telefono movil" required>
+                    <input type="tel" name="telefono" inputmode="tel" pattern="\d{8}" maxlength="8" placeholder="Telefono movil" required>
                 </figure>
                 <figure>
                     <label for="">Correo electronico <span>*</span></label>
-                    <input type="email" name="correo electronico" inputmode="email" placeholder="Correo electronico" required>
+                    <input type="email" name="correo" inputmode="email" placeholder="Correo electronico" required>
                 </figure>
                 <figure>
                     <label for="">Puesto <span>*</span></label>
@@ -268,7 +269,8 @@
     <script src="https://cdn.jsdelivr.net/npm/progressbar.js"></script>
     <script src="circulo.js"></script>
     <script src="splide-sliders.js"></script>
-
+    <script src="googlesheets.js"></script>
+    <script src="sweept2mensaje.js"></script>
 
 </body>
 

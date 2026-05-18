@@ -245,7 +245,7 @@ body{
 }
 .development .text-index{
     width: 100%;
-    min-height: 70vh;
+    min-height: 67vh;
     padding: 2rem;
     background-image: url('../img/development.jpg');
     background-position: center;
@@ -254,7 +254,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     top: 0px;
 }
 .development .text-index::before{
@@ -273,15 +272,14 @@ body{
 }
 .development .text-second{
     width: 100%;
-    min-height: 131vh;
+    min-height: 67vh;
     background: url('../img/text-second.avif');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: end;
-    padding-bottom: 6rem;
+    align-items: center;
     z-index: 1;
 }
 .development .text-second h2{
@@ -290,12 +288,18 @@ body{
     /*font-size: 3.7rem;*/
     font-size: clamp(25px, 6vw, 60px);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 3rem;
 }
-.development .text-second .development-icon{
+/*----*/
+.development .development-icon{
     flex: 1 1 20rem;
     display: flex;
     flex-direction: column;
     align-items: end;
+    position: absolute;
+    z-index: 4;
+    bottom: 20%;
+    right: 15%;
 }
 .development .text-second .main{
     width: 80%;
@@ -307,7 +311,7 @@ body{
     gap: 2rem;
     padding: 1rem .5rem ;
 }
-.development .text-second .development-icon .figure{
+.development .development-icon .figure{
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -315,16 +319,45 @@ body{
     background: var(--celeste-c4);
     z-index: 2; 
 }
-.development .text-second .development-icon a{
+.development .development-icon a{
     color: white;
     font-size: 4rem;
 }
-.development .text-second .development-icon p{
+.development .development-icon p{
     color: white;
     font-size: 1.9rem;
     font-weight: 600;
 }
-
+/*----*/
+.development .development-icon2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+.development .development-icon2 .figure2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background: var(--celeste-c4);
+    z-index: 2; 
+}
+.development .development-icon2 .figure2 a{
+    color: white;
+    font-size: 4rem;
+}
+.development .development-icon2 .figure2 p{
+    color: white;
+    font-size: 1.9rem;
+    font-size: clamp(1.5rem, 2vw, 5rem);
+    font-weight: 600;
+    text-align: center;
+}
+.development .development-icon2{
+    display: none;
+}
 /*-------   BUSINES-SECTION -----*/
 .busines{
     width: 100%;
@@ -695,8 +728,36 @@ body{
    
 }   
 }
-
-
+@media(max-width: 918px){
+    .development .development-icon{
+    display: none;
+}
+.development .development-icon2{
+    display: block;
+}
+}
+@media(max-width: 900px){
+    .development .text-index{
+    min-height: 50vh;
+}
+.development .text-second .main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.development .development-icon2 .figure2{
+    width: 100%; 
+}
+.development .text-second h2{
+    width: 100%;
+}
+.development .text-second h2{
+    padding-bottom: 0;
+}
+}
 
 
 
@@ -753,7 +814,7 @@ body{
 @media(max-width: 450px){
     .content .container-content .container-text p{
     width: 100%;
-    line-height: 1.6rem;
+    line-height: 1.7rem;
 }
 }
 @media(max-width: 600px){

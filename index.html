@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="./styles/cursos.css">
     <link rel="stylesheet" href="./styles/contacto.css">
     <link rel="stylesheet" href="./styles/floating-whatsapp.css">
+    <link rel="stylesheet" href="./styles/mensaje.css">
+  
     
     <!-- libreria icono font asewore-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -29,8 +31,8 @@
     <link rel="stylesheet" href="./hamburgers-master/dist/hamburgers.css">   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!----  libreria progressbars.js ---->
-    <!----  libreria AOS efectos pagina ---->
-    
+    <!----  libreria alerta sweetAlert2 ---->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
 </head>
@@ -86,6 +88,7 @@
                 <a class="menu_link" href="contacto.html">Contacto</a>
                 <a class="menu_link" href="bolq.html">Blog</a>
             </nav>
+            <!--- --->
             <ul class="header-icon">
                     <a class="logo" href="index.html"><img id="logo" src="./img/logo-header-CSR.png" alt="logo creativo"></a>
                     <li><a class="icon-phoneNAV" href="tel:+50237199449" target="_blank"><i class="fa-solid fa-phone-volume"></i></a></li>
@@ -114,7 +117,7 @@
             <div class="absolute-title">
             <h3 class="title-vertical">Lunes a Viernes 8:00 a 17:00 Hrs.</h3>
             </div>
-            <h2 class="title-bloq-index">Bienvenido a <span>CSR</span> consultotres</h2>
+            <h2 class="title-bloq-index">Bienvenido a <span>CSR</span> consultores</h2>
             <p>Consultoría enfocada en material contable</p>
             <a href="contacto.html">Más información</a>
         </article>
@@ -434,6 +437,12 @@
 
     <!---   section-development -->
     <section class="development">
+        <div class="development-icon effect desde-derecha">
+            <figure class="figure">
+                <a href=""><i class="fa-regular fa-calendar"></i></a>
+                <p>Formamos <br> personas y <br> negocios <br> desde el <br> año 2005</p>
+            </figure>
+        </div>
         <article class="text-index">
             <h2 class="effect desde-abajo">Conoce sobre nosotros</h2>
         </article>
@@ -442,11 +451,11 @@
                 <div class="development-title">
                     <h2 class="effect desde-izquierda">Desarrollo de Estrategias</h2>
                 </div>
-
-                <div class="development-icon effect desde-derecha">
-                    <figure class="figure">
+                <!--    -->
+                <div class="development-icon2 effect desde-derecha">
+                    <figure class="figure2">
                         <a href=""><i class="fa-regular fa-calendar"></i></a>
-                        <p>Formamos <br> personas y <br> negocios <br> desde el <br> año 2005</p>
+                        <p>Formamos personas y negocios desde el año 2005</p>
                     </figure>
                 </div>
             </main>
@@ -607,33 +616,38 @@
 <!------    CONTACTO-FORMULARIO  ------->
     <section class="formulario-index">
         <article class="index-form">
-            <form action="">
-            <label for="">Nombre<span>*</span></label>
-            <input type="text"  placeholder="Nombre y Apellido">
+            <form name="contact-form" id="" method="post" action="">
+            <label >Nombre<span>*</span></label>
+            <input type="text" name="nombre"  placeholder="Nombre y Apellido">
             <main class="grid-label">
                 <figure>
-                    <label for="">Telefono <span>*</span></label>
-                    <input type="text" name="Telefono" inputmode="tel" maxlength="8" pattern="\d{8}" placeholder="Telefono movil" required>
+                    <label >Telefono <span>*</span></label>
+                    <input type="tel" name="telefono" inputmode="tel" maxlength="8" pattern="\d{8}" placeholder="Telefono movil" required>
                 </figure>
                 <figure>
-                    <label for="">Correo electronico <span>*</span></label>
-                    <input type="text" name="Correo electronico" inputmode="email" placeholder="Correo electronico" required>
+                    <label >Correo electronico <span>*</span></label>
+                    <input type="email" name="correo" inputmode="email" placeholder="Correo electronico" required>
                 </figure>
                 <figure>
-                    <label for="">Puesto <span>*</span></label>
-                    <input type="text" name="Puesto" inputmode="text" placeholder="Puesto que desempeña" required>
+                    <label>Puesto <span>*</span></label>
+                    <input type="text" name="puesto" inputmode="text" placeholder="Puesto que desempeña" required>
                 </figure>
                 <figure>
-                    <label for="">Empresa <span>*</span></label>
-                    <input type="text" name="Empresa" inputmode="text" placeholder="Empresa en que labora" required>
+                    <label>Empresa <span>*</span></label>
+                    <input type="text" name="empresa" inputmode="text" placeholder="Empresa en que labora" required>
                 </figure>
             </main>
             <label class="label-textarea" for="">¿Como podemos ayudarte? <span>*</span></label>
-            <textarea name="Mensaje" id="" rows="6" placeholder="Describe tu solicitud para que podamos ayudarte de la mejor manera posible" required></textarea>
+            <textarea type="text" name="mensaje" id="" rows="6" placeholder="Describe tu solicitud para que podamos ayudarte de la mejor manera posible" required></textarea>
             <button class="button-form" type="submit">Enviar</button>
         </form>
         </article>
+
+
+       
     </section>
+
+    <!----  SCRIPT    ---->
 
 
     <!-----     footer  ------>
@@ -673,7 +687,8 @@
     <script src="circulo.js"></script>
     <script src="splide-sliders.js"></script>
     <script src="efectos.js"></script>
-
+    <script src="googlesheets.js"></script>
+    <script src="sweept2mensaje.js"></script>
 
 </body>
 
