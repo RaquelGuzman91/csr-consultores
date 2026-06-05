@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Raquel Guzman"> 
-    <meta name="description" content="Desarrollo web Html, Css y JavaScript">
-    <meta name="keywords" content="código, HTML, y más">   <meta name="Url" content="">
+    <meta name="author" content=""> 
+    <meta name="description" content="csr consultores, tenemos mas de 10 años de experiencia visitanos, estamos ubicados en 2 Calle 25-80, Cdad. de Guatemala">
+    <meta name="keywords" content="">   <meta name="Url" content="">
     <title>CSR | Contacto</title>
     <link rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="img/CSR-favi-icon.png">
@@ -17,7 +17,9 @@
     <link rel="stylesheet" href="./styles/contacto.css">
     <link rel="stylesheet" href="./styles/floating-whatsapp.css">
     <link rel="stylesheet" href="./styles/mensaje.css">
-
+    <!-- script -->
+    <script src="./JS/sliders-clientes.js" defer></script>
+    <script src="./JS/data.js" type="module"></script>
     <!-- libreria icono font asewore-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- o enlace a la CDN a libreria splide -->
@@ -35,7 +37,7 @@
 <body>
     <!--section header    -->
     <header class="header" id="mainHeader">
-        <a class="logo" href="index.html"><img id="logo" src="./img/HEADER-lol.png"  alt="logo creativo"></a>
+        <a class="logo" href="index.html"><img id="logo" src="./img/HEADER-lol.png"  alt="csr consultores"></a>
         <nav>
             <a href="somos.html">Somos</a>
             <a href="servicios.html">Servicios</a>
@@ -74,7 +76,7 @@
             <nav class="nav-panel panel menu_list nav-links">
                 <div class="nav-logores">
                     <figure class="logoNAV" href="index.html">
-                        <img id="logo" src="./img/logo-header-CSR.png" alt="logo creativo">
+                        <img id="logo" src="./img/logo-header-CSR.png" alt="csr consultores">
                     </figure>
                 </div>
                 <a class="menu_link" href="somos.html">Somos</a>
@@ -83,8 +85,9 @@
                 <a class="menu_link" href="contacto.html">Contacto</a>
                 <a class="menu_link" href="bolq.html">Blog</a>
             </nav>
+            <!--- --->
             <ul class="header-icon">
-                    <a class="logo" href="index.html"><img id="logo" src="./img/logo-header-CSR.png" alt="logo creativo"></a>
+                    <a class="logo" href="index.html"><img id="logo" src="./img/logo-header-CSR.png" alt="csr consultores"></a>
                     <li><a class="icon-phoneNAV" href="tel:+50237199449" target="_blank"><i class="fa-solid fa-phone-volume"></i></a></li>
                     <li class="li-icon-phoneNAV">
                         <h2>Contáctanos</h2>
@@ -104,7 +107,7 @@
        
 
     </header>
-
+    
     <!-- section banner-index   -->
     <section class="index">
         <h2 class="title-bloq">Contacto</h2>
@@ -114,30 +117,30 @@
             <li><a class="grey" href="">/</a></li>
             <li><a class="red" href="#">Contacto</a></li>
         </ul>
-        <div class="floating-icon">
-            <a href="https://wa.me/50237199449?text=Hola,%20quiero%20más%20información%20sobre%20su%20servicio....." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-        </div>
+
+
+        <div class="floating-icon" id="floating-icon"></div>
         <!--carousel-->
         <section id="image-carousel" class="splide" id="splide" aria-label="Beautiful Images">
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
-                        <img src="./img/slider-index1.png" alt="">
+                        <img src="./img/banner-contabilidad1.jpg" alt="csr consultores">
                     </li>
                     <li class="splide__slide">
-                        <img src="img/slider-index2.jpg" alt="">
+                        <img src="img/banner-contabilidad5.jpg" alt="csr consultores">
                     </li>
                     <li class="splide__slide">
-                        <img src="img/slider-index3.jpg" alt="">
+                        <img src="img/banner-contabilidad4.avif" alt="csr consultores">
                     </li>
                     <li class="splide__slide">
-                        <img src="./img/slider-index1.png" alt="">
+                        <img src="./img/ContabilidadTablet.jpg" alt="csr consultores">
                     </li>
                     <li class="splide__slide">
-                        <img src="img/slider-index2.jpg" alt="">
+                        <img src="img/juntaContadores.jpg" alt="csr consultores">
                     </li>
                     <li class="splide__slide">
-                        <img src="img/slider-index3.jpg" alt="">
+                        <img src="img/slider-index3.jpg" alt="csr consultores">
                     </li>
                 </ul>
             </div>
@@ -188,89 +191,30 @@
     <!-- section-sliders     ---->
     <section class="customers">
         <h2>Contamos con una amplia cartera de clientes:</h2>
-        <article class="customers-slider">
-             <section id="image-carousel" class="splide splide2" id="splide" aria-label="Beautiful Images">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide">
-                        <img src="img/logo1-bi-banco.png" alt="">
-                    </li>
-                    <li class="splide__slide">
-                        <img src="img/logo2-cultura-digital.png" alt="">
-                    </li>
-                    <li class="splide__slide">
-                        <img src="img/logo3-guatemala-antigua.webp" alt="">
-                    </li>
-                    <li class="splide__slide">
-                        <img src="img/logo4-aceite-ideal.webp" alt="">
-                    </li>
-                    <li class="splide__slide">
-                        <img src="img/logo5-samboro.jpg" alt="">
-                    </li>
-                    <li class="splide__slide">
-                        <img src="img/logo6-altamira.png" alt="">
-                    </li>
-                    <li class="splide__slide">
-                        <img src="img/logo7-byb.png" alt="">
-                    </li>
-                    <li class="splide__slide">
-                        <img src="img/logo8-ECOMA-LOGO.webp" alt="">
-                    </li>
-                    <li class="splide__slide">
-                        <img src="img/logo9-made-in-guatemala.webp" alt="">
-                    </li>
-                    <li class="splide__slide">
-                        <img src="img/logo10-inmobilidaria.png" alt="">
-                    </li>
-                    <li class="splide__slide">
-                        <img src="img/logo11-isopan.png" alt="">
-                    </li>
-                    <li class="splide__slide">
-                        <img src="img/logo12-cbc.png" alt="">
-                    </li>
-                </ul>
-            </div>
-        </section>
-        </article>
+        <article class="customers-slider" id="customers-slider"></article>
     </section>
 
    <!-----     footer  ------>
-    <footer class="footer">
-        <article class="contaier-footer">
-            <div class="footer-header">
-                <div class="img">
-                    <a href="index.html"><img src="img/HEADER-lol.png" alt=""></a>
-                </div>
-                <h2>¿Deseas iniciar tu empresa, nosotros te apoyamos con lo administrativo <span>+ 502 3719-9449</span></h2>
-            </div>
-            <div class="footer-nav">
-                <article class="footer-card"><a href="">&copy;2025 Copyrights by diseño web Guatemala</a></article>
-                <article class="footer-networks">
-                    <a class="networks" href="https://www.facebook.com/ConsultoresCSR" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a class="networks" href="https://maps.app.goo.gl/T3vzPuNKXb6qo6YB9" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
-                    <a class="networks" href="mailto:servicioscsr@gmail.com?subject=Solicitud%20de%20información" target="_blank"><i class="fa-regular fa-envelope"></i></a>
-                    <a class="networks" href="https://wa.me/50237199449?text=Hola,%20quiero%20más%20información%20sobre%20su%20servicio....." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                </article>
-                <article class="footer-card-im">
-                    <a href="index.html"><img src="img/HEADER-lol.png" alt=""></a>
-                </article>
-            </div>
-        </article>
-    </footer>
+    <footer class="footer" id="footer"></footer>
 
 
 
 
 
-<div class="nav-overlay"></div>
+    <div class="nav-overlay"></div>
 
-    <script src="header.js"></script>
-    <script src="modules.js" type="module"></script>
+    <script src="./JS/header.js"></script>
+    <script src="./JS/modules.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/progressbar.js"></script>
-    <script src="circulo.js"></script>
-    <script src="splide-sliders.js"></script>
-    <script src="googlesheets.js"></script>
-    <script src="sweept2mensaje.js"></script>
+    <script src="./JS/circulo.js"></script>
+    <script src="./JS/splide-sliders.js"></script>
+    <script src="./JS/googlesheets.js"></script>
+    <script src="./JS/sweept2mensaje.js"></script>
+    <!----SCRIPT     ----->
+    <script type="module" src="./JS/footer.js" ></script>
+    <script type="module" src="./JS/icono-flotante.js" ></script>
+    <script src="./JS/seguridad.js"></script>
+
 
 </body>
 
