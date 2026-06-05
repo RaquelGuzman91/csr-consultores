@@ -3,11 +3,12 @@
         document.addEventListener('DOMContentLoaded', function () {
             new Splide('.splide', {
                 type: 'fade',       // carrusel infinito
+                rewind: true,          //se repite infinitamente
                 autoplay: true,         // reproducción automática
                 interval: 3000,         // tiempo entre slides (ms)
                 arrows: false,        // quita flechas de navegación
                 pagination: false,        // quita los botones de paginación
-                spedd: 900,
+                speed: 2000,               //el fade dura 2 minutos
             }).mount();
         
 

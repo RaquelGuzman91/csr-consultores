@@ -280,7 +280,6 @@ body{
         .headerNAV nav .menu_link {
             height: 100%;
             width: 100%;
-            border-bottom: 1.5px solid rgba(219, 219, 219, 0.658);
             z-index: 500;
             font-size: 1.3rem;
             font-weight: 100;
